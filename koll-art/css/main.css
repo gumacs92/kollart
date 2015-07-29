@@ -4,12 +4,18 @@
 body{
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
+    width: 100%;
 
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: megjelenes ;
     animation-duration: 4s;
 }
+
+main {
+    padding-top: 70px;
+}
+
 p{
 
 }
