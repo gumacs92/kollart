@@ -18,11 +18,15 @@
 <body>
     <div id="header"></div>
         <div class="container main">
-            <h1 class="text-center"> Kérdése támadt?</h1>
-            <h2 class="text-center">Küldje el üzenetét webes felületünkön</h2>
+            <h1 class="text-center">
+                Kérdése támadt?
+            </h1>
+            <h2 class="text-center">
+                Küldje el üzenetét webes felületünkön
+            </h2>
             <br>
             <div class="row">
-                <div class="col-sm-3">  </div>
+                <div class="col-sm-3"> </div>
                     <div class="col-sm-6" >
                         <form class="form-horizontal " onsubmit="return false">
                             <div id="namediv" class="form-group has-feedback">
@@ -42,6 +46,15 @@
                                          <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
                                     </div>
                             </div>
+                            <div id="mobildiv" class="form-group has-feedback">
+                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
+
+                                <div class="input-group col-xs-8 col-md-6">
+                                    <!--<span class="input-group-addon">@</span>-->
+                                    <input type="mobil" class="form-control" id="mobil" placeholder="Mobil">
+                                    <span id="mobilbox" class="form-control-feedback" aria-hidden="true"></span>
+                                </div>
+                            </div>
 
                             <div id="textdiv" class="form-group has-feedback">
                                 <!--<label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>-->
@@ -54,21 +67,15 @@
                             <div class="text-center"><button id="send" type="submit" class="btn btn-primary" onclick="onbtnclick()">Küldés</button></div>
 
                         </form>
-
                         <br>
-                        <p>
-                            <small>* A csillaggal jelölt mezők kitöltése kötelező</small>
+                        <p class="lab">
+                            * A csillaggal jelölt mezők kitöltése kötelező
                             <br>
-                            <small>
-                                A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
-                            </small>
+                            A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
                         </p>
                     </div><!--col-sm-6-->
                     <div class="col-sm-3">  </div>
             </div><!--row-->
-
-            <p><br> </p>
-
         </div><!--main-->
     <div id="footer"></div>
 </body>
