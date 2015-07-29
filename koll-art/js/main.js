@@ -50,6 +50,11 @@ function onbtnclick() {
     });
 }
 
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+
 function checkVisible(elm, eval) {
     eval = eval || "visible";
     var vpH = $(window).height(), // Viewport Height
