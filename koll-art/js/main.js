@@ -57,7 +57,7 @@ function adjust_textarea(h) {
 function checkVisible(elm, eval) {
     eval = eval || "visible";
     var vpH = $(window).height(), // Viewport Height
-        st = $(window).scrollTop, // Scroll Top
+        st = $(window).scrollTop(), // Scroll Top
         y = $(elm).offset().top,
         elementHeight = $(elm).height();
     //alert(y)
