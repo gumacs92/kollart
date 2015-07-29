@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+
+    <script language="javascript" type="text/javascript" src="./koll-art/javascript/jquery-2.1.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./koll-art/javascript/main.js"></script>
+    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" href="./koll-art/css/main.css" >
+    <link rel="stylesheet" href="./koll-art/css/font.css" >
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta charset="UTF-8">
+    <title>Kapcsolat</title>
+    <script type="text/javascript">
+        //auto expand textarea
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+    </script>
+</head>
+<body>
+    <div class="container ">
+        <div id="header"></div>
+
+
+        <div class="container main">
+            <h1 class="text-center"> Kérdése támadt?</h1>
+            <h2 class="text-center">Küldje el üzenetét webes felületünkön</h2>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">  </div>
+                    <div class="col-sm-6" >
+                        <form class="form-horizontal " onsubmit="return false">
+                            <div id="namediv" class="form-group has-feedback">
+                                <!--<label  class="control-label col-sm-offset-2 col-sm-2" for="name">Név</label>-->
+                                    <div class="input-group col-xs-8 col-md-6">
+                                        <!--<span class="input-group-addon">¤</span>-->
+                                        <input type="text" class="form-control" id="name" placeholder="Név *">
+                                    <span id="namebox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                            </div>
+                            <div id="emaildiv" class="form-group has-feedback">
+                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
+
+                                    <div class="input-group col-xs-8 col-md-6">
+                                        <!--<span class="input-group-addon">@</span>-->
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail *">
+                                         <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                            </div>
+
+                            <div id="textdiv" class="form-group has-feedback">
+                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>-->
+                                    <div class="input-group col-xs-12 col-md-12">
+                                        <!--<span class="input-group-addon">$</span>-->
+                                        <textarea class="form-control" id="message" rows="1" placeholder="Ide írd az üzentet *" onkeyup="adjust_textarea(this)" ></textarea>
+                                        <span id="textbox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                            </div>
+                            <div class="text-center"><button id="send" type="submit" class="btn btn-primary">Küldés</button></div>
+
+                        </form>
+
+                        <br>
+                        <p>
+                            <small>* A csillaggal jelölt mezők kitöltése kötelező</small>
+                            <br>
+                            <small>
+                                A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
+                            </small>
+                        </p>
+                    </div><!--col-sm-6-->
+                    <div class="col-sm-3">  </div>
+            </div><!--row-->
+
+            <p><br> </p>
+
+        </div><!--main-->
+
+<!-- <div class="alja">  </div>-->
+
+    </div><!--container-->
+    <div id="footer"></div>
+</body>
+</html>
