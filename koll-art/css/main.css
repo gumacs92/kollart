@@ -26,6 +26,7 @@ h3{
 /* =====================================================================================================================
   KEYFRAMES
 ===================================================================================================================== */
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes megjelenes {
     0% {
@@ -37,6 +38,7 @@ h3{
         filter: Alpha(opacity=100);
     }
 }
+
 @-moz-keyframes megjelenes {
     0% {
         opacity: 0;
@@ -47,6 +49,7 @@ h3{
         filter: Alpha(opacity=100);
     }
 }
+
 @-o-keyframes megjelenes {
     0% {
         opacity: 0;
@@ -57,10 +60,15 @@ h3{
         filter: Alpha(opacity=100);
     }
 }
+
 /* Standard syntax */
 @keyframes megjelenes {
-    0%   {opacity: 0;
-        filter: Alpha(opacity=00);}
-    100% { opacity: 1;
-        filter: Alpha(opacity=100);}
+    0%   {
+        opacity: 0;
+        filter: Alpha(opacity=00);
+    }
+    100% {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
 }
