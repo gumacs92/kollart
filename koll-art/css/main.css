@@ -1,0 +1,46 @@
+/* =====================================================================================================================
+  ALAP BEALLITASOK
+===================================================================================================================== */
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+
+    -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: megjelenes ;
+    animation-duration: 4s;
+}
+p{
+
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+
+/* =====================================================================================================================
+  KEYFRAMES
+===================================================================================================================== */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes megjelenes {
+    0% {
+        opacity: 0;
+        filter: Alpha(opacity=00);
+    }
+    100% {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
+}
+/* Standard syntax */
+@keyframes megjelenes {
+    0%   {opacity: 0;
+        filter: Alpha(opacity=00);}
+    100% { opacity: 1;
+        filter: Alpha(opacity=100);}
+}
