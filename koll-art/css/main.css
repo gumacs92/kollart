@@ -17,10 +17,10 @@ body{
 }
 
 p{
-
+    font-size: 24px;
 }
 h1{
-
+ font-size: 60px;
 }
 h2{
 
@@ -47,7 +47,7 @@ h3{
 }
 .navbar-default .navbar-brand{
     color:#000000;
-    font-size:24px;
+    font-size:36px;
 }
 .navbar{
     background-color: #fff;
@@ -57,9 +57,10 @@ h3{
     border-left:0;
     border-right:0;
     font-family: 'Oxygen', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 
 }
+
 /* =====================================================================================================================
   FOOTER
 ===================================================================================================================== */
