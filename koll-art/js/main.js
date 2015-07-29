@@ -46,7 +46,6 @@ function onbtnclick() {
 
     $('form').on('submit', function () {
         return success;
-        alert(success);
     });
 }
 
@@ -58,7 +57,7 @@ function adjust_textarea(h) {
 function checkVisible(elm, eval) {
     eval = eval || "visible";
     var vpH = $(window).height(), // Viewport Height
-        st = $(window).scrollTop(), // Scroll Top
+        st = $(window).scrollTop, // Scroll Top
         y = $(elm).offset().top,
         elementHeight = $(elm).height();
     //alert(y)
@@ -81,7 +80,7 @@ function addZoomIn(reftomb) {
     }
 }
 
-function calcPos(winHeight, scroll, adjuster, inertia) {
+/*function calcPos(winHeight, scroll, adjuster, inertia) {
     return "50% " + (-((winHeight + scroll) - adjuster) * inertia) + "px";
 }
 
@@ -103,7 +102,7 @@ function moveBackground() {
     if (checkVisible(elem3)) {
         elem3.css({'backgroundPosition': calcPos(winHeight, scroll, winHeight, 0.1)});
     }
-}
+}*/
 
 //-----------------------------------------HTML oldalakhoz tartozó függvények-------------------------------------------
 
@@ -130,7 +129,7 @@ $(window).load(function () {
 var loaded = false;
 var reftomb;
 
-function index() {
+/*function index() {
     //carousel diavetiteshez
     var slideqty = $('#featured .item').length;
     for (var i = 0; i < slideqty; i++) {
@@ -139,9 +138,9 @@ function index() {
     }
     $('.carousel').carousel({
         interval: "7000",
-        pause: "false",
+        pause: "false"
     });
-}
+}*/
 
 function reference() {
     if (!loaded) {
@@ -149,9 +148,5 @@ function reference() {
         loaded = true;
     }
     addZoomIn(reftomb);
-}
-
-function web() {
-    //moveBackground();
 }
 
