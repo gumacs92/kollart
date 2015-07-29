@@ -12,7 +12,7 @@ body{
     animation-duration: 4s;
 }
 
-main {
+.main {
     padding-top: 70px;
 }
 
@@ -27,6 +27,55 @@ h2{
 }
 h3{
 
+}
+
+/* =====================================================================================================================
+  HEADER
+===================================================================================================================== */
+.navbar-default{
+    background-color: white;
+    border-color:black;
+}
+.navbar-default .navbar-nav > li > a {
+    color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color:#c0c0c0;
+}
+.navbar-right{
+    margin-right: 0;
+}
+.navbar-default .navbar-brand{
+    color:#000000;
+    font-size:24px;
+}
+.navbar{
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+
+}
+/* =====================================================================================================================
+  FOOTER
+===================================================================================================================== */
+footer .navbar-default{
+    margin-top:10px;
+    padding-top:10px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size: 12px;
+    border-top:1px solid #000000;
+    border-bottom:0;
+    color:black;
+
+}
+footer a{
+    color:#c0c0c0;
 }
 
 /* =====================================================================================================================
