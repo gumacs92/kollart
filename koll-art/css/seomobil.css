@@ -1,0 +1,41 @@
+.kozkep {
+    position: relative;
+    top: -20px;
+    -webkit-animation-name: eltunes; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    transform: perspective(640px) rotatex(0deg);
+    animation-name: eltunes;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes eltunes {
+    0% {
+        transform: perspective(640px) rotatex(60deg);
+    }
+    100% {
+        transform: perspective(640px) rotatex(0deg);
+    }
+}
+/* Standard syntax */
+@keyframes eltunes {
+    0% {
+        transform: perspective(640px) rotatex(60deg);
+    }
+    100% {
+        transform: perspective(640px) rotatex(0deg);
+    }
+}
+
+.mobil .img-responsive{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.main{
+    overflow: hidden;
+}
+h1{
+font-size:64px;
+    font-family: 'Yantramanav', sans-serif;
+}
