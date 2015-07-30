@@ -8,19 +8,34 @@ body{
 
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -moz-animation-name: megjelenes ; /* Chrome, Safari, Opera */
+    -moz-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -o-animation-name: megjelenes ; /* Chrome, Safari, Opera */
+    -o-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: megjelenes ;
     animation-duration: 4s;
 }
+/*majd kérdezd meg, hogy ez miért van itt... röviden enélkül nem megy a parallax.......*/
+/*body.nofade {
+    -webkit-animation-name: none ;
+    -webkit-animation-duration: 4s;
+    -moz-animation-name: megjelenes ;
+    -moz-animation-duration: 4s;
+    -o-animation-name: megjelenes ;
+    -o-animation-duration: 4s;
+    animation-name: none ;
+    animation-duration: 4s;
+}*/
 
 .main {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 p{
     font-size: 24px;
 }
 h1{
- font-size: 60px;
+    font-size: 60px;
 }
 h2{
 

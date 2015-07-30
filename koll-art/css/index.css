@@ -1,6 +1,122 @@
 /* =====================================================================================================================
   ALAP BEALLITASOK
 ===================================================================================================================== */
+/* =====================================================================================================================
+  CAROUSEL
+======================================================================================================================*/
+#featured{
+    opacity: 1;
+
+}
+
+#featured img {
+    width: 100%;
+}
+
+#featured .carousel-inner {
+    height: 80vh;
+}
+
+
+#featured .carousel-caption {
+    position: absolute;
+    right:15%;
+    left: 60%;
+    bottom: 0;
+    top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+#featured .item{
+    -webkit-transition: opacity ease-out .7s;/*adjust timing here */
+    -moz-transition: opacity ease-out .7s;
+    -o-transition: opacity ease-out .7s;
+    transition: opacity ease-out .7s;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+
+}
+#featured .item.active{
+    opacity: 1;
+}
+/* =====================================================================================================================
+  PARALLAX
+======================================================================================================================*/
+
+section.group:last-child {
+    margin-bottom: 0;
+}
+section.group h2 {
+    margin-bottom: 40px;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+section.group p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+section.group p:last-child {
+    margin-bottom: 0;
+}
+section.group.content {
+    padding: 40px 0;
+}
+
+section.group.contentbox {
+    height: 450px;
+}
+
+section.group.parallax {
+    height: 900px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: static;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section.group.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    line-height: 900px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+section.group.parallax1 {
+    -webkit-background-image: url("../img/dia/placehold3.jpg");
+    -moz-background-image: url("../img/dia/placehold3.jpg");
+    -o-background-image: url("../img/dia/placehold3.jpg");
+    background-image: url("../img/dia/placehold3.jpg");
+}
+section.group.parallax2 {
+    -webkit-background-image: url("../img/dia/placehold4.jpg");
+    -moz-background-image: url("../img/dia/placehold4.jpg");
+    -o-background-image: url("../img/dia/placehold4.jpg");
+    background-image: url("../img/dia/placehold4.jpg");
+}
+section.group.parallax3 {
+    -webkit-background-image: url("../img/dia/placehold5.jpg");
+    -moz-background-image: url("../img/dia/placehold5.jpg");
+    -o-background-image: url("../img/dia/placehold5.jpg");
+    background-image: url("../img/dia/placehold5.jpg");
+}
+
 
 
 
