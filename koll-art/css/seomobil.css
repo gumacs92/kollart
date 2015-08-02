@@ -13,16 +13,11 @@
 
 }
 
-.mobil .img-responsive{
-    margin-left:auto;
-    margin-right:auto;
-
-}
 .main{
     overflow: hidden;
 }
 h1{
-    font-size:72px;
+    font-size:60px;
     font-family: 'Yantramanav', sans-serif;
 
 }
@@ -39,21 +34,72 @@ p{
 
 
 }
+/*elvalasztok*/
+.fillin{
+
+    height: 150px;
+}
+.fillin-1{
+
+
+
+}
+.fillin-2{
+
+
+
+}
+.fillin-3{
+
+
+
+}
+/*mobil*/
+
+.mobil .img-responsive{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+/*gyorsasag*/
 .gyorsasag{
     background-color: #eeeeee;
 }
 .gyorsasag span{
     font-family: 'Yantramanav', sans-serif;
-    font-size:42px;
+    font-size:48px;
     color:#bd9f86;
     padding-top: 0;
 }
-.fillin-1{
 
-    height: 150px;
-
+.gyorsasag a{
+    color:#bd9f86;
+    font-size:24px;
 }
 
+
+.gyorsasag small{
+
+    font-size:18px;
+}
+/*socialmarketing*/
+.socialmarketing .img-responsive{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.socialmarketing a{
+    color:#bd9f86;
+    font-size:24px;
+}
+/*seo*/
+.seo{
+    background-color: #eeeeee;
+}
+.seo a{
+    color:#bd9f86;
+    font-size:24px;
+}
 
 /* =====================================================================================================================
     xs
