@@ -169,7 +169,7 @@ function index() {
         $('#featured ol').append(insertText);
     }*/
     $('.carousel').carousel({
-        interval: "3000",
+        interval: "5000",
         pause: "false"
     });
 }
