@@ -7,13 +7,13 @@ body{
     width: 100%;
 
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
     -moz-animation-name: megjelenes ; /* Chrome, Safari, Opera */
-    -moz-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -moz-animation-duration: 2s; /* Chrome, Safari, Opera */
     -o-animation-name: megjelenes ; /* Chrome, Safari, Opera */
-    -o-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -o-animation-duration: 2s; /* Chrome, Safari, Opera */
     animation-name: megjelenes ;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 /*majd kérdezd meg, hogy ez miért van itt... röviden enélkül nem megy a parallax.......*/
 /*body.nofade {

@@ -126,55 +126,16 @@ $(window).load(function () {
     $("#footer").load("footer.html");
 });
 
-/*function turnbox() {
-    var car = $('#carouselbox');
-    if(car.hasClass("show-front")) {
-        car.removeClass("show-front");
-        car.addClass("show-bottom");
-        return;
-    }
-    if($('#carouselbox').hasClass("show-bottom")) {
-        car.removeClass("show-bottom");
-        car.addClass("show-back");
-        return;
-    }
-    if($('#carouselbox').hasClass("show-back")) {
-        car.removeClass("show-back");
-        car.addClass("show-top");
-        return;
-    }
-    if($('#carouselbox').hasClass("show-top")) {
-        car.removeClass("show-top");
-        car.addClass("show-front");
-        return;
-    }
-
-}*/
-
-
-var loaded = false;
-var boxtomb;
+//function showIndex(){
+//    $('.content').css({display: "auto"});
+//}
 
 function index() {
-    if (!loaded) {
-        boxtomb = [$('.frontside'), $('.bottomside'), $('.backside'), $('.topside')];
-        loaded = true;
-    }
-
-    //setInterval("turnbox()", 2000);
-    //carousel diavetiteshez
-    /*var slideqty = $('.item').length;
-    for (var i = 0; i < slideqty; i++) {
-        var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
-        $('#featured ol').append(insertText);
-    }*/
-    $('.carousel').carousel({
-        interval: "5000",
-        pause: "false"
-    });
+    //setTimeout("showIndex()", 4000);
 }
 
 var reftomb;
+var loaded = false;
 
 function reference() {
     if (!loaded) {

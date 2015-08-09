@@ -4,7 +4,185 @@
 /* =====================================================================================================================
   CAROUSEL
 ======================================================================================================================*/
-#featured{
+
+@font-face {
+    font-family: myHero;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ostrich Sans Light'), url('../fonts/ostrich-sans-regular.woff') format('woff');
+}
+
+@keyframes fromEntranceToMainsite {
+    from {
+        font-size: 120px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        opacity: 1;
+    }
+    to {
+        font-size: 50px;
+        top: 20%;
+        left: 75%;
+        margin-right: -75%;
+        opacity: 1;
+    }
+}
+
+@keyframes entranceDisappear{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes contentAppear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.main {
+    padding: 0 0 0 0;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#start .blackback {
+    background-color: black;
+    background-size: 100%, 100%;
+    height: 100vh;
+    z-index: 1;
+
+    -webkit-animation: entranceDisappear ease-in-out;
+    -moz-animation: entranceDisappear ease-in-out;
+    -o-animation: entranceDisappear ease-in-out;
+    animation: entranceDisappear ease-in-out;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#start .herotext > p{
+    font-family: 'myHero', sans-serif;
+    font-size: 120px;
+    color: white;
+    z-index: 2;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-animation: fromEntranceToMainsite ease-in-out;
+    -moz-animation: fromEntranceToMainsite ease-in-out;
+    -o-animation: fromEntranceToMainsite ease-in-out;
+    animation: fromEntranceToMainsite ease-in-out;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+#mainsite, #mainbanner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+    z-index: 0;
+    opacity: 0;
+
+
+    -webkit-animation: contentAppear ease-in-out;
+    -moz-animation: contentAppear ease-in-out;
+    -o-animation: contentAppear ease-in-out;
+    animation: contentAppear ease-in-out;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+#mainsite img, #mainbanner img{
+    width: 100%;
+}
+
+#mainsite .headrow {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#mainsite .headrow > p {
+    font-size: 50px;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#mainsite .newsrow {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#mainsite .newsrow > img {
+    position: absolute;
+    left: 50%;
+
+    margin-right: -50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+
+
+
+/*#featured{
     opacity: 1;
 
 }
@@ -14,7 +192,7 @@
 }
 
 #featured .carousel-inner {
-    height: 90vh;
+    height: 700px;
 }
 
 
@@ -32,7 +210,7 @@
 }
 
 #featured .item{
-    -webkit-transition: opacity ease-out .7s;/*adjust timing here */
+    -webkit-transition: opacity ease-out .7s;/*adjust timing here
     -moz-transition: opacity ease-out .7s;
     -o-transition: opacity ease-out .7s;
     transition: opacity ease-out .7s;
@@ -46,12 +224,12 @@
 }
 #featured .item.active{
     opacity: 1;
-}
+}*/
 /* =====================================================================================================================
   PARALLAX
 ======================================================================================================================*/
 
-section.group:last-child {
+/*section.group:last-child {
     margin-bottom: 0;
 }
 section.group h2 {
@@ -115,7 +293,7 @@ section.group.parallax3 {
     -moz-background-image: url("../img/dia/placehold5.jpg");
     -o-background-image: url("../img/dia/placehold5.jpg");
     background-image: url("../img/dia/placehold5.jpg");
-}
+}*/
 
 
 

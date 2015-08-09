@@ -3,12 +3,10 @@
 <head>
     <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.min.js"></script>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.js"></script>
     <script language="javascript" type="text/javascript">
-        $(document).ready(function () {
+        /*$(document).ready(function () {
             index();
-        });
+        });*/
     </script>
 
     <link rel="stylesheet" href="./koll-art/css/bootstrap.css" >
@@ -24,77 +22,91 @@
 <body>
     <div id="header"></div><!--header-->
     <div class="main">
-        <section class="carousel" data-ride="carousel" id="featured">
-            <div class="carousel-inner">
-                <div class="item slide1 active">
-                    <img class="img-responsive" src="koll-art/img/dia/kollart_medium1.jpg" alt="">
-                    <div class="carousel-caption">
-                    <h2>Mi ott leszünk amikor a hajnal hasad</h2>
+        <div id="start">
+            <div class="blackback">
+            </div>
+            <div class="herotext">
+                <p>Koll-Art</p>
+            </div>
+        </div>
+        <div id="mainbanner">
+            <div class="row" id="heroimage">
+                <img class="img-responsive" src="koll-art/img/dia/kollart_medium1.jpg"/>
+            </div>
+            <div class="row" id="description">
+                <div class="col-xs-4">
+                    <p>
+                        Ötleteinek megfogalmazása után a formatervezéssel folytatjuk weboldalának megvalósítását.
+                        Az általunk képviselt dizájn magában foglalja az esztétikát...
+                    </p>
+                    <a href="web.html">Tovább a weblap készítéshez
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-            </div><!--item active-->
-            <div class="item slide2">
-                <img class="img-responsive" src="koll-art/img/dia/harom.jpg" alt="">
-                <div class="carousel-caption">
-                    <h2>FEJLÉC2</h2>
+                <div class="col-xs-4">
+                    <p>
+                        Ügyfeleink számára kedvező feltételek mellett biztosítunk lehetőséget domain név és
+                        tárhely igényelésére. Kiemelt akcióink keretében akár ingyenes tárhelyeket is adunk...
+                    </p>
+                    <a href="price.html">Tovább a csomagajánlatokhoz
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-            </div><!--item-->
-            <div class="item slide3">
-                <img class="img-responsive" src="koll-art/img/dia/ketto.jpg" alt="">
-                <div class="carousel-caption">
-                    <h2>FEJLÉC3</h2>
+                <div class="col-xs-4">
+                    <p>
+                        Napjaink legmodernebb elveit követve reszponzívvá alakítjuk weboldalát, hogy bármely kijelzőn
+                        tökéletesen jelenjen meg és a keresőrobotok előrébb sorolják a találati listán...
+                    </p>
+                    <a href="seomobil.html">Tovább az optimalizáláshoz
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-            </div><!--item-->
-            <div class="item slide4">
-                <img class="img-responsive" src="koll-art/img/dia/egy.jpg" alt="">
-                <div class="carousel-caption">
-                    <h2>FEJLÉC4</h2>
-                    </div>
-                </div><!--item-->
-            </div>  <!--carousel-inner-->
-        </section><!-- featured carousel slide-->
-     <!--   <section class="parallaxgroup">
-          &lt;!&ndash;  <section class="group parallax parallax1">
-                    <h1>Serene</h1>
-            </section>&ndash;&gt;
-            <section class="group contentbox content">
-                <div class="container">
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                </div>
-            </section>
-            <section class="group parallax parallax2">
-                    <h1>Rise</h1>
-            </section>
-            <section class="group contentbox content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <h2>Lorem Ipsum Dolor</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        </div>
-                        <div class="col-xs-4">
-                            <h2>Lorem Ipsum Dolor</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        </div>
-                        <div class="col-xs-4">
-                            <h2>Lorem Ipsum Dolor</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="group parallax parallax3">
-                    <h1>Calm</h1>
-            </section>
-            <section class="group contentbox content">
-                <div class="container">
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                </div>
-            </section>
+            </div>
+        </div>
+        <div id="mainsite" class="">
+            <div class="container-fluid">
 
-
-        </section>-->
+                <div class="row headrow">
+                    <img class="img-responsive" src="koll-art/img/dia/placeholder1.jpg"/>
+                    <p>bullshit1</p>
+                </div>
+                <div class="row newsrow" >
+                    <div class="col-xs-6">
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <img class="img-responsive" src="koll-art/img/dia/placeholder2.jpg"/>
+                    </div>
+                </div>
+                <div class="row headrow">
+                    <img class="img-responsive" src="koll-art/img/dia/placeholder1.jpg"/>
+                    <p>bullshit2</p>
+                </div>
+                <div class="row newsrow">
+                    <div class="col-xs-6 center-block">
+                        <img class="img-responsive" src="koll-art/img/dia/placeholder2.jpg"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+                <div class="row headrow">
+                    <img class="img-responsive" src="koll-art/img/dia/placeholder1.jpg"/>
+                    <p>bullshit3</p>
+                </div>
+                <div class="row newsrow">
+                    <div class="col-xs-6">
+                        <h2>Lorem Ipsum Dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    </div>
+                    <div class="col-xs-6 center-block">
+                        <img class="img-responsive" src="koll-art/img/dia/placeholder2.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="footer"></div><!--footer-->
 </body>
