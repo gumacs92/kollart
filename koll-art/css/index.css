@@ -44,31 +44,10 @@ footer .navbar-default {
 }
 
 .main {
-    padding: 0 0 0 0;
     position: relative;
     overflow-y: hidden;
 }
-/*dreamTeam szin*/
-.description{
-    background-color: #edf1ff;
-}
-.description a {
-    color:#7a89c2;
-    text-decoration: none;
-}
-.description .table-bordered {
-    border: 0 solid #fff;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-}
 
-
-#description{
-    font-size: 18px;
-}
-#description p{
-    font-size: 18px;
-}
 #start {
     position: absolute;
     top: 0;
@@ -100,7 +79,9 @@ footer .navbar-default {
 }
 
 #start .herotext > p{
-    font-family: 'myHero', sans-serif;
+    font-family: "Yantramanav", sans-serif;
+    font-style: normal;
+    font-weight: 100;
     font-size: 120px;
     color: white;
     z-index: 2;
@@ -130,6 +111,27 @@ footer .navbar-default {
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+}
+
+/*dreamTeam szin*/
+#mainbanner #description{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #edf1ff;
+    font-size: 18px;
+}
+#mainbanner #description a {
+    color:#7a89c2;
+    text-decoration: none;
+}
+#mainbanner #description .table-bordered {
+    border: 0 solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+#mainbanner #description p, #mainbanner #description a {
+    font-size: 18px;
 }
 
 
@@ -162,7 +164,7 @@ footer .navbar-default {
     animation-fill-mode: forwards;
 }
 /* #mainbanner img kivettem, hogy a fels? kis képeket ne húzza szét*/
-#mainsite img{
+#mainsite img, #mainbanner #heroimage img{
     width: 100%;
 }
 
