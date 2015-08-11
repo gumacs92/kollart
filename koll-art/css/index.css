@@ -1,6 +1,10 @@
 /* =====================================================================================================================
   ALAP BEALLITASOK
 ===================================================================================================================== */
+
+footer .navbar-default {
+    margin-top: 0px;
+}
 /* =====================================================================================================================
   CAROUSEL
 ======================================================================================================================*/
@@ -44,7 +48,27 @@
     position: relative;
     overflow-y: hidden;
 }
+/*dreamTeam szin*/
+.description{
+    background-color: #edf1ff;
+}
+.description a {
+    color:#7a89c2;
+    text-decoration: none;
+}
+.description .table-bordered {
+    border: 0 solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
 
+
+#description{
+    font-size: 18px;
+}
+#description p{
+    font-size: 18px;
+}
 #start {
     position: absolute;
     top: 0;
@@ -137,14 +161,15 @@
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
-#mainsite img, #mainbanner img{
+/* #mainbanner img kivettem, hogy a fels? kis képeket ne húzza szét*/
+#mainsite img{
     width: 100%;
 }
 
 #mainsite .headrow {
     position: relative;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 #mainsite .headrow > p {
