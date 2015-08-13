@@ -77,7 +77,6 @@ footer .navbar-default {
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
-
 #start .herotext > p{
     font-family: "Yantramanav", sans-serif;
     font-style: normal;
@@ -113,7 +112,6 @@ footer .navbar-default {
     animation-fill-mode: forwards;
 }
 
-/*dreamTeam szin*/
 #mainbanner #description{
     padding-left: 15px;
     padding-right: 15px;
@@ -129,7 +127,6 @@ footer .navbar-default {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-
 #mainbanner #description p, #mainbanner #description a {
     font-size: 18px;
 }
@@ -144,7 +141,6 @@ footer .navbar-default {
 
     z-index: 0;
     opacity: 0;
-
 
     -webkit-animation: contentAppear ease-in-out;
     -moz-animation: contentAppear ease-in-out;
@@ -163,20 +159,19 @@ footer .navbar-default {
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
-/* #mainbanner img kivettem, hogy a fels? kis képeket ne húzza szét*/
 #mainsite img, #mainbanner #heroimage img{
     width: 100%;
 }
 
-#mainsite .headrow {
+#mainsite .headrow, #mainsite .endrow{
     position: relative;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
-#mainsite .headrow > p {
+#mainsite .headrow > p{
     font-size: 50px;
-    color: white;
+    color:black;
 
     position: absolute;
     top: 50%;
@@ -187,12 +182,34 @@ footer .navbar-default {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 0;
+
+}
+
+#mainsite .endrow > p{
+    font-size: 50px;
+    color:white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-right: -20%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
 }
 
 #mainsite .newsrow {
+    position: relative;
+    display: block;
     margin-top: 25px;
     margin-bottom: 25px;
-    position: relative;
+
+    font-size: 18px;
 }
 
 #mainsite .newsrow > img {
@@ -205,6 +222,11 @@ footer .navbar-default {
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
+
+#mainsite .newsrow h2 {
+    color: #9EA8AE;
+}
+
 
 
 

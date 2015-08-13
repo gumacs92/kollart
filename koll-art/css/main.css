@@ -48,24 +48,24 @@ h3{
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-.navbar-default{
+#header .navbar-default{
     background-color: white;
     border-color:black;
 }
-.navbar-default .navbar-nav > li > a {
+#header .navbar-default .navbar-nav > li > a {
     color:#000000;
 }
-.navbar-default .navbar-nav > li > a:hover {
+#header .navbar-default .navbar-nav > li > a:hover {
     color:#c0c0c0;
 }
-.navbar-right{
+#header .navbar-right{
     margin-right: 0;
 }
-.navbar-default .navbar-brand{
+#header .navbar-default .navbar-brand{
     color:#000000;
     font-size:36px;
 }
-.navbar{
+#header .navbar{
     background-color: #fff;
     opacity: 0.9;
     border-radius: 0;
@@ -80,8 +80,10 @@ h3{
 /* =====================================================================================================================
   FOOTER
 ===================================================================================================================== */
-footer .navbar-default{
-    margin-top:10px;
+
+
+
+#footer .navbar-default{
     padding-top:10px;
     padding-left:15px;
     padding-right:15px;
@@ -91,10 +93,10 @@ footer .navbar-default{
     color:black;
 
 }
-footer a{
+#footer a{
     color:#c0c0c0;
 }
-footer p{
+#footer p{
     font-size: 12px;
 
 }
