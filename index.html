@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
-    <script language="javascript" type="text/javascript">
-        /*$(document).ready(function () {
-            index();
-        });*/
-    </script>
-
     <link rel="stylesheet" href="./koll-art/css/bootstrap.css" >
     <link rel="stylesheet" href="./koll-art/css/main.css" >
     <link rel="stylesheet" href="./koll-art/css/index.css" >
     <link rel="stylesheet" href="./koll-art/css/animate.css">
 
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Koll-Art</title>
 </head>
 <body>
-    <div id="header"></div><!--header-->
+    <div id="header">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Koll-ART</a>
+            </div><!--navbar-header-->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="web.html">Weblap & Webáruház</a></li>
+                    <li><a href="seomobil.html">SEO & Mobil</a></li>
+                    <li><a href="price.html">Árajánlat</a></li>
+                    <li><a href="reference.html">Refrencia</a></li>
+                    <li><a href="contact.html">Kapcsolat</a></li>
+                    <li><a href="#">Ügyfelek</a></li>
+                </ul>
+            </div><!--collapse navbar-collapse-->
+        </nav><!--navbar navbar-default navbar-fixed-top container-->
+    </div> <!--header-->
     <div class="main">
         <div id="start">
             <div class="blackback">
@@ -31,12 +47,12 @@
         </div>
         <div id="mainbanner">
             <div class="row" id="heroimage">
-                <img class="img-responsive" src="koll-art/img/dia/kollart_medium1.jpg"/>
+                <img class="img-responsive" src="koll-art/img/index/o_kollart.jpg"/>
             </div>
             <div class="row" id="description">
-                <div class="col-sm-4 text-center">
+                <div class="col-xs-12 col-sm-4 text-center">
                     <br> <p>
-                        <img class="img-rounded" src="koll-art/img/kicsike.png"/>
+                        <img class="" src="koll-art/img/index/o_weblap.png"/>
                     </p>
                     <p>
                         Ötleteinek megfogalmazása után a formatervezéssel folytatjuk weboldalának megvalósítását.
@@ -47,10 +63,10 @@
                     </a>
                     <br><br>
                 </div>
-                <div class="col-sm-4 text-center table-bordered">
+                <div class="col-xs-12 col-sm-4 text-center table-bordered">
                     <p>
                         <br>
-                        <img class="" src="koll-art/img/kicsike3.png"/>
+                        <img class="" src="koll-art/img/index/o_ajanlat.png"/>
                     </p>
                     <p>
                         Ügyfeleink számára kedvező feltételek mellett biztosítunk lehetőséget domain név és
@@ -62,9 +78,9 @@
                     </a>
                     <br><br>
                 </div>
-                <div class="col-sm-4 text-center">
+                <div class="col-xs-12 col-sm-4 text-center">
                     <br> <p>
-                        <img class="" src="koll-art/img/kicsike4.png"/>
+                        <img class="" src="koll-art/img/index/o_optimalizalas.png"/>
                     </p>
                     <p>
                         Napjaink legmodernebb elveit követve reszponzívvá alakítjuk weboldalát, hogy bármely kijelzőn
@@ -81,63 +97,136 @@
         <div id="mainsite" class="">
             <div class="container">
                 <div class="row newsrow">
-                    <div class="col-sm-5 text-center">
+                    <div class="col-sm-5 ">
                         <div class="row">
                             <div class="col-sm-12">
-                                <h2>A legjobb dizájn</h2>
-                                <p>Amint megnyílik az oldal, a teljes egészében kifinomult dizájn mindent éles megvilágításba helyez.
-                                    Amint megnyílik az oldal, a teljes egészében kifinomult dizájn mindent éles megvilágításba helyez.
+                                <h2>A legjobb teljesítmény</h2>
+                                <p>
+                                    Hagyományos társaival ellentétben weboldala nem tartalmaz lassú elemeket,
+                                    hogy már a startnál biztos legyen győzelme.
+                                    <br>
+
                                 </p>
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-sm-4">
+                                <small></small> <br><span>100<small>%</small> </span> <br><small> Tisztaság</small>
+                            </div>
+                            <div class="col-sm-4">
+                                <small> </small> <br><span>0<small>% </small></span><br><small>  Fölösleg</small>
+                            </div>
+                            <div class="col-sm-4">
+                                <small> </small><br>  <span>2<small>-szeres</small> </span><br><small>  Gyorsaság</small>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-sm-12">
-                                <h2>A legjobb teljesítmény</h2>
-                                <p>Amint megnyílik az oldal, a teljes egészében kifinomult dizájn mindent éles megvilágításba helyez.
-                                    Amint megnyílik az oldal, a teljes egészében kifinomult dizájn mindent éles megvilágításba helyez.
+                                <br>
+                                <h2>A legjobb dizájn</h2>
+                                <p>
+                                    Amint megnyílik weboldala, a teljes egészében kifinomult dizájn mindent éles
+                                    megvilágításba helyez.
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 center-block">
-                        <img class="img-responsive" src="koll-art/img/design.jpg"/>
+                        <img class="img-responsive" src="koll-art/img/index/o_design.jpg"/>
                     </div>
                 </div>
             </div>
             <div class="row headrow">
-                <img class="img-responsive" src="koll-art/img/biztos.jpg"/>
-                <p>Értünk hozzá</p>
+                <img class="img-responsive" src="koll-art/img/index/o_biztos.jpg"/>
+                <p>Merész döntések, kompromisszumok nélkül</p>
             </div>
             <div class="container">
                 <div class="row newsrow">
                     <div class="col-xs-6 center-block">
-                        <img class="img-responsive" src="koll-art/img/air.jpg"/>
+                        <img class="img-responsive" src="koll-art/img/index/o_mobil.jpg"/>
                     </div>
-                    <div class="col-xs-6 text-center">
-                        <h2>A részletekre fordított figyelem eredményeképpen</h2>
-                        <p>Magunk mögött hagytuk a régi, nagy helyigényű technológiákat, például a flash-t.<br>
-                            Optimalizált weboldalakat készítünk, hogy minden tartalom tökéletes tisztasággal jelenjen meg bármely kijelzőn.
-                        </p>
+                    <div class="col-xs-6 ">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Hiheteletlenül hatékony</h2>
+                                <p>
+                                    Hiszen, magunk mögött hagytuk a régi, nagy helyigényű technológiákat, például a flash-t.<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <br>
+                                <h2>A részletekre fordított figyelem eredményeképpen</h2>
+                                <p>
+                                    Optimalizált weboldalakat készítünk, hogy minden tartalom tökéletes tisztasággal jelenjen meg bármely kijelzőn.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="row endrow">
-                <img class="img-responsive" src="koll-art/img/tiszta.jpg"/>
-                <p>Tiszta mint a tenger</p>
+                <div class="col-sm-offset-2 col-sm-8 text-center">
+
+                    <div class="col-sm-offset-1 col-sm-2 table-bordered">
+                        <small> Optimalizálás </small> <br><span>49.900<small>Ft</small></span> <br><small> </small>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-2 table-bordered">
+                        <small> Weboldal </small> <br><span>90.000<small>Ft</small> </span><br><small>  </small>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-2 table-bordered">
+                        <small> Webáruház</small><br>  <span>130.000<small>Ft</small></span><br><small>   </small>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </div>
-    <div id="footer"></div><!--footer-->
+    <br><br>
+    <div id="footer">
+        <div class="navbar navbar-default" >
+            <div class="row hidden-xs">
+                <div class="col-sm-5">
+                    <p class="text-left"> Koll-ART <br> Minden jog fenntartva <br> Copyright &copy; 2015</p>
+                </div><!--col-xs-5-->
+                <div class="col-sm-2">
+                    <p class="text-center">
+                        <a href="#"> <i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="#"> <i class="fa fa-google-plus fa-lg"></i></a>
+                        <a href="#"> <i class="fa fa-pinterest fa-lg"></i></a>
+                        <a href="#"> <i class="fa fa-twitter fa-lg"></i></a>
+                    </p>
+                </div><!--col-xs-2-->
+                <div class="col-sm-5">
+                    <p class="text-right">
+                        +36 30 / 856 0598 <br> info@koll-art.hu <br> kollart.weblap@gmail.com
+                    </p>
+                </div><!--col-xs-5-->
+            </div><!--row hidden-xs-->
+            <div class="row hidden-sm hidden-md hidden-lg hidden-print">
+                <div class="col-sx-12">
+                    <p class="text-center">Minden jog fenntartva - Koll-ART - Copyright &copy; 2015</p>
+                </div><!--col-xs-12-->
+                <div class="col-sx-12">
+                    <p class="text-center">
+                        <a href="#"> <i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#"> <i class="fa fa-google-plus fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#"> <i class="fa fa-pinterest fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#"> <i class="fa fa-twitter fa-lg"></i></a>
+                    </p>
+                </div><!--col-xs-12-->
+                <div class="col-sx-12">
+                    <p class="text-center">
+                        +36 30 / 856 0598 <br> info@koll-art.hu &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; kollart.weblap@gmail.com
+                    </p>
+                </div><!--col-xs-12-->
+            </div><!--row hidden-xs-->
+        </div><!--navbar navbar-default row-->
+    </div><!--footer-->
 </body>
 </html>
-<!-- <h2>Tiszta lappal kezdjük a munkát</h2>
-                        <p>Ez biztosítja tervezőinknek a soha nem látott újdonságok megalkotásához szükséges szabadságot.</p>
-                        <div class="col-sm-4">
-                            <small></small> <br><span>100% </span> <br><small> Tisztaság</small>
-                        </div>
-                        <div class="col-sm-4">
-                            <small> </small> <br><span>0% </span><br><small>  Fölösleg</small>
-                        </div>
-                        <div class="col-sm-4">
-                            <small> </small><br>  <span>100% </span><br><small>  Átláthatóság</small>
-                        </div>-->

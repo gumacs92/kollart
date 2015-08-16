@@ -171,7 +171,7 @@ footer .navbar-default {
 
 #mainsite .headrow > p{
     font-size: 50px;
-    color:black;
+    color:#000000;
 
     position: absolute;
     top: 50%;
@@ -188,10 +188,10 @@ footer .navbar-default {
 
 #mainsite .endrow > p{
     font-size: 50px;
-    color:white;
+    color:#000000;
 
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
 
     margin-right: -20%;
@@ -201,6 +201,9 @@ footer .navbar-default {
     transform: translate(-50%, -50%);
     z-index: 0;
 
+}
+#mainsite .endrow .table-bordered{
+    border-color: #7A89C2;
 }
 
 #mainsite .newsrow {
@@ -215,7 +218,6 @@ footer .navbar-default {
 #mainsite .newsrow > img {
     position: absolute;
     left: 50%;
-
     margin-right: -50%;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
@@ -224,11 +226,19 @@ footer .navbar-default {
 }
 
 #mainsite .newsrow h2 {
-    color: #9EA8AE;
+    color: #7A89C2;
 }
+/*9EA8AE*/
+.newsrow span, .endrow span{
 
+    font-size:32px;
+    color:#7A89C2;
+    padding-top: 0;
+}
+.newsrow small, .endrow small{
 
-
+    font-size:18px;
+}
 
 
 /*#featured{
@@ -372,7 +382,9 @@ section.group.parallax3 {
     lg
 ===================================================================================================================== */
 @media (min-width: 1200px){
-
+    .tiszta{
+        background-image: url("../img/tiszta_tukor.jpg");
+    }
 
 }
 

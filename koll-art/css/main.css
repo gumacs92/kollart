@@ -91,13 +91,13 @@ h3{
     border-top:1px solid #000000;
     border-bottom:0;
     color:black;
-
+    background-color: #ffffff;
 }
 #footer a{
     color:#c0c0c0;
 }
 #footer p{
-    font-size: 12px;
+    font-size: 14px;
 
 }
 /* =====================================================================================================================
