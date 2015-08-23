@@ -32,6 +32,14 @@
     transition: none;
 
 }
+.form-control:active {
+    border-bottom: 1px solid #bd9f86;
+}
+.form-control:focus {
+    border-bottom: 1px solid #bd9f86;
+}
+
+
 textarea{
     resize: none;
     overflow: hidden;
@@ -42,18 +50,33 @@ textarea{
     box-shadow: none;
 }
 
-.btn-primary {
+/* =====================================================================================================================
+A KÜLDES GOMB STILUSA
+/* ===================================================================================================================*/
+#send {
     color: #000000;
     background-color: #ffffff;
-    border-color: #ffffff;
+    border-color: #977f6b;
     border-radius: 0;
+}
 
+#send:hover{
+    box-shadow: 0 0 20px #bd9f86;
 }
-.btn-primary:hover {
-    color: #000000;
-    background-color: #ffffff;
-    border-radius: 0;
+
+#send:active {
+    background-color: #bd9f86;
+    box-shadow: 0 0 5px #bd9f86;
 }
+
+#send:focus {
+    outline: 0;
+    box-shadow: 0 0 5px #bd9f86;
+}
+
+/* =====================================================================================================================
+EGYEB
+/* ===================================================================================================================*/
 p{
     font-size: 18px;
 }
@@ -63,6 +86,57 @@ h1{
 .lab{
     font-size:12px;
 }
+
+/* =====================================================================================================================
+A STILUSA AZ ANIMACIOKNAK ES A HIBA BUBOREKOKNAK
+/* ===================================================================================================================*/
+@keyframes appearlittle{
+    from { transform: translate(0, -100%) scale(0, 0); }
+    to { transform: translate(0, -100%) scale(1, 1); }
+}
+
+@keyframes disappearlittle{
+    from { transform: translate(0, -100%) scale(1, 1); }
+    to { transform: translate(0, -100%) scale(0, 0); }
+}
+
+.appear{
+    animation: appearlittle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.disappear {
+    animation: disappearlittle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.alert {
+    padding: 5px;
+    transform: scale(0, 0);
+    margin-bottom: -50%;
+    border-radius: 0;
+    border:1px solid transparent
+
+}
+.alert-danger{
+    color:#c43b4d;
+    background-color:#e4b9b9;/*#f2dede;*/
+    border-color:#bd9f86;/*#ebccd1;*/
+}
+
+.big {
+    margin-top: 25px;
+}
+
+/*input:-webkit-autofill,*/
+/*textarea:-webkit-autofill,*/
+/*select:-webkit-autofill {*/
+    /*background-color: #7A89C2 !important;*/
+    /*background-image: none !important;*/
+    /*color: black !important;*/
+/*}*/
 /* =====================================================================================================================
     xs
 ===================================================================================================================== */

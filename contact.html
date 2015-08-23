@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <script src="//use.typekit.net/wct3cll.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="./koll-art/css/bootstrap.css">
+    <link rel="stylesheet" href="./koll-art/css/main.css">
+    <link rel="stylesheet" href="./koll-art/css/animate.css">
+    <link rel="stylesheet" href="./koll-art/css/contact.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>-->
+
     <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="./koll-art/css/bootstrap.css" >
-    <link rel="stylesheet" href="./koll-art/css/main.css" >
-    <link rel="stylesheet" href="./koll-art/css/animate.css">
-    <link rel="stylesheet" href="./koll-art/css/contact.css" >
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Kapcsolat</title>
 </head>
 <body>
-    <div id="header"></div>
-        <div class="container main">
-            <h1 class="text-center">
-                Kérdése támadt?
-            </h1>
-            <h2 class="text-center">
-                Küldje el üzenetét webes felületünkön
-            </h2>
+<div id="header"></div>
+<div class="container main">
+    <h1 class="text-center">
+        Kérdése támadt?
+    </h1>
+
+    <h2 class="text-center">
+        Küldje el üzenetét webes felületünkön
+    </h2>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+            <form class="form-horizontal" action="" method="POST">
+                <div id="namediv" class="row form-group has-feedback">
+                    <div class="input-group col-xs-12 col-md-6">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Név *">
+                        <span id="namebox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-offset-6 col-xs-12 col-md-6">
+                        <div class="alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div id="emaildiv" class="row form-group has-feedback">
+                    <div class="input-group col-xs-12 col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail *">
+                        <span id="emailbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-offset-6 col-xs-12 col-md-6">
+                        <div class="alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div id="mobildiv" class="row form-group has-feedback">
+                    <div class="input-group col-xs-12 col-md-6">
+                        <input type="tel" class="form-control" name="tel" id="tel" placeholder="Telefonszám">
+                        <span id="mobilbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-md-offset-6 col-xs-12 col-md-6">
+                        <div class="alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div id="textdiv" class="row form-group has-feedback">
+                    <div class="input-group col-xs-12 col-md-12">
+                        <textarea class="form-control" name="message" id="message" rows="1"
+                                  placeholder="Ide írd az üzentet *" onkeyup="adjust_textarea(this)"></textarea>
+                        <span id="textbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
+                    </div>
+                    <br>
+                    <div class="col-sm-12 col-md-12">
+                        <div class="big alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <button id="send" type="button" onclick="contact(event);" class="btn btn-primary">Küldés</button>
+                </div>
+            </form>
             <br>
-            <div class="row">
-                <div class="col-sm-3"> </div>
-                    <div class="col-sm-6" >
-                        <form class="form-horizontal " onsubmit="return false">
-                            <div id="namediv" class="form-group has-feedback">
-                                <!--<label  class="control-label col-sm-offset-2 col-sm-2" for="name">Név</label>-->
-                                    <div class="input-group col-xs-8 col-md-6">
-                                        <!--<span class="input-group-addon">¤</span>-->
-                                        <input type="text" class="form-control" id="name" placeholder="Név *">
-                                    <span id="namebox" class="form-control-feedback" aria-hidden="true"></span>
-                                    </div>
-                            </div>
-                            <div id="emaildiv" class="form-group has-feedback">
-                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
 
-                                    <div class="input-group col-xs-8 col-md-6">
-                                        <!--<span class="input-group-addon">@</span>-->
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail *">
-                                         <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
-                                    </div>
-                            </div>
-                            <div id="mobildiv" class="form-group has-feedback">
-                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
-
-                                <div class="input-group col-xs-8 col-md-6">
-                                    <!--<span class="input-group-addon">@</span>-->
-                                    <input type="mobil" class="form-control" id="mobil" placeholder="Mobil">
-                                    <span id="mobilbox" class="form-control-feedback" aria-hidden="true"></span>
-                                </div>
-                            </div>
-
-                            <div id="textdiv" class="form-group has-feedback">
-                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>-->
-                                    <div class="input-group col-xs-12 col-md-12">
-                                        <!--<span class="input-group-addon">$</span>-->
-                                        <textarea class="form-control" id="message" rows="1" placeholder="Ide írd az üzentet *" onkeyup="adjust_textarea(this)" ></textarea>
-                                        <span id="textbox" class="form-control-feedback" aria-hidden="true"></span>
-                                    </div>
-                            </div>
-                            <div class="text-center"><button id="send" type="submit" class="btn btn-primary" onclick="onbtnclick()">Küldés</button></div>
-
-                        </form>
-                        <br>
-                        <p class="lab">
-                            * A csillaggal jelölt mezők kitöltése kötelező
-                            <br>
-                            A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
-                        </p>
-                    </div><!--col-sm-6-->
-                    <div class="col-sm-3">  </div>
-            </div><!--row-->
-        </div><!--main-->
-    <div id="footer"></div>
+            <p class="lab">
+                * A csillaggal jelölt mezők kitöltése kötelező
+                <br>
+                A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk
+                át, és azokat csak saját céljainkra használjuk fel.
+            </p>
+        </div>
+    </div>
+    <!--row-->
+</div>
+<!--main-->
+<div id="footer"></div>
 </body>
 </html>
