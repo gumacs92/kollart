@@ -13,10 +13,10 @@ if (empty($_POST['name'])) {
     $errormessages['name'] = "Nem adott meg nevet";
     $err = true;
 } else {
-    /*if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+    if (!preg_match("/^[\\p{L&}\\s ]*$/u", $name)) {
         $errors['name'] = true;
-        $errormessages['name'] = "Csak betuk es szokozok megengedettek";
-    } else */{
+        $errormessages['name'] = "Csak betuk es szokozok lehetnek";
+    } else {
         $errors['nameinput'] = false;
     }
 }
