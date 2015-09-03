@@ -10,8 +10,6 @@
 
     <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.min.js"></script>
-    <script language="javascript" type="text/javascript" src="./koll-art/js/bootstrap.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
@@ -20,25 +18,32 @@
 <body>
 <div id="header"></div>
 <div class="container main">
-    <h1 class="text-center">
-        Kérdése támadt?
-    </h1>
 
-    <h2 class="text-center">
-        Küldje el üzenetét webes felületünkön
-    </h2>
-    <br>
 
-    <div class="row">
-        <div class="col-sm-offset-3 col-sm-6">
+    <div class="row contactform">
+        <h1 class="text-center">
+            Kérdése támadt?
+        </h1>
+
+        <h2 class="text-center">
+            Küldje el üzenetét webes felületünkön
+        </h2>
+        <br>
+
+        <div class="col-md-offset-3 col-md-6 col-sm-12">
             <form class="form-horizontal" action="" method="POST">
                 <div id="namediv" class="row form-group has-feedback">
                     <div class="input-group col-xs-12 col-md-6">
                         <input type="text" class="form-control" name="name" id="name" placeholder="Név *">
                         <span id="namebox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
                     </div>
-                    <div class="col-md-offset-6 col-xs-12 col-md-6">
-                        <div id="namealert" class="hidden alert alert-danger" role="alert"></div>
+                    <div class="hidden-xs hidden-sm col-md-offset-6 col-md-6">
+                        <div class="namealert hidden alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div class="row hidden-md hidden-lg">
+                    <div class="col-xs-12">
+                        <div class="namealert hidden alert alert-danger" role="alert"></div>
                     </div>
                 </div>
                 <div id="emaildiv" class="row form-group has-feedback">
@@ -46,8 +51,13 @@
                         <input type="email" class="form-control" name="email" id="email" placeholder="E-mail *">
                         <span id="emailbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
                     </div>
-                    <div class="col-md-offset-6 col-xs-12 col-md-6">
-                        <div id="emailalert" class="hidden alert alert-danger" role="alert"></div>
+                    <div class="emailalert hidden-xs hidden-sm col-md-offset-6 col-md-6">
+                        <div class="hidden alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div class="row hidden-md hidden-lg">
+                    <div class="col-xs-12">
+                        <div class="emailalert hidden alert alert-danger" role="alert"></div>
                     </div>
                 </div>
                 <div id="mobildiv" class="row form-group has-feedback">
@@ -55,7 +65,7 @@
                         <input type="tel" class="form-control" name="tel" id="tel" placeholder="Telefonszám">
                         <span id="mobilbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
                     </div>
-                    <div class="col-md-offset-6 col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm col-md-offset-6 col-md-6">
                         <div id="telalert" class="hidden alert alert-danger" role="alert"></div>
                     </div>
                 </div>
@@ -65,12 +75,18 @@
                                   placeholder="Ide írd az üzentet *" onkeyup="adjust_textarea(this)"></textarea>
                         <span id="textbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
                     </div>
-                    <br>
-                    <div class="col-sm-12 col-md-12">
-                        <div id="textalert" class="hidden big alert alert-danger" role="alert"></div>
+                    <div class="hidden-xs hidden-sm col-md-12">
+                        <div class="textalert hidden big alert alert-danger" role="alert"></div>
+                    </div>
+                </div>
+                <div class="row hidden-md hidden-lg">
+                    <div class="col-xs-12">
+                        <div class="textalert hidden alert alert-danger" role="alert"></div>
                     </div>
                 </div>
                 <br>
+                <br>
+
                 <div class="text-center">
                     <button id="send" type="button" onclick="contact(event);" class="btn btn-primary">Küldés</button>
                 </div>
@@ -84,6 +100,16 @@
                 át, és azokat csak saját céljainkra használjuk fel.
             </p>
         </div>
+
+    </div>
+    <div class="thankyou hidden text-center">
+        <h1>
+            Köszönjük üzenetét!
+        </h1>
+
+        <h2>
+            Kollégáink 24 órán belül válaszolnak.
+        </h2>
     </div>
     <!--row-->
 </div>

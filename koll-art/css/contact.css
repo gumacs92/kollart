@@ -122,12 +122,57 @@ A STILUSA AZ ANIMACIOKNAK ES A HIBA BUBOREKOKNAK
 }
 .alert-danger{
     color:#c43b4d;
-    background-color:#e4b9b9;/*#f2dede;*/
-    border-color:#bd9f86;/*#ebccd1;*/
+    background-color:#e4b9b9;
+    border-color:#bd9f86;
 }
 
 .big {
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.contactform {
+    position: relative;
+    /*animation: slideOutLeft;*/
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.slideout{
+    animation: slideOutLeft;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes slideInRightThankYou {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.thankyou {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slidein{
+    animation: slideInRightThankYou;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
 
 /*input:-webkit-autofill {
@@ -148,12 +193,29 @@ input:-webkit-autofill:focus {
     .main{
         padding-top:50px;
     }
+
+    .alert {
+        margin-bottom: -25px;
+        margin-top: 25px;
+        position: relative;
+    }
 }
 /* =====================================================================================================================
     sm
 ===================================================================================================================== */
 @media (min-width: 768px)and (max-width: 991px){
+    h1{
+        font-size: 36px;
+    }
+    .main{
+        padding-top:50px;
+    }
 
+    .alert {
+        margin-bottom: -25px;
+        margin-top: 25px;
+        position: relative;
+    }
 
 }
 /* =====================================================================================================================

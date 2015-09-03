@@ -78,77 +78,59 @@ function reference() {
 //TODO átírni ezt az egész szennyett itt lentebb, mert ez használhatatlan
 //csak akkor kerdezz errol a formedvenyrol, ha eleg reszeg vagy
 function contactajaxsuccess(data) {
-    if (data.errors.name) {
-        if ($("#namebox").hasClass("glyphicon-ok")) {
-            $("#namebox").removeClass("glyphicon-ok");
-            $("#namediv").removeClass("has-success");
-        }
-        $("#namebox").addClass("glyphicon-remove");
-        $("#namediv").addClass("has-error");
-        if($('#namealert').hasClass("hidden"))
-            $('#namealert').removeClass("hidden");
-        $('#namealert').removeClass("disappear");
-        $('#namealert').addClass("appear");
-        $('#namealert').text(data.errormessages.name);
-    } else {
-        if ($("#namebox").hasClass("glyphicon-remove")) {
-            $("#namebox").removeClass("glyphicon-remove");
-            $("#namediv").removeClass("has-error");
-        }
-        $("#namebox").addClass("glyphicon-ok");
-        $("#namediv").addClass("has-success");
-        $('#namealert').removeClass("appear");
-        $('#namealert').addClass("disappear");
-
-    }
-    if (data.errors.email) {
-        if ($("#emailbox").hasClass("glyphicon-ok")) {
-            $("#emailbox").removeClass("glyphicon-ok");
-            $("#emaildiv").removeClass("has-success");
-        }
-        $("#emailbox").addClass("glyphicon-remove");
-        $("#emaildiv").addClass("has-error");
-        if($('#emailalert').hasClass("hidden"))
-            $('#emailalert').removeClass("hidden");
-        $('#emailalert').removeClass("disappear");
-        $('#emailalert').addClass("appear");
-        $('#emailalert').text(data.errormessages.email);
-    } else {
-        if ($("#emailbox").hasClass("glyphicon-remove")) {
-            $("#emailbox").removeClass("glyphicon-remove");
-            $("#emaildiv").removeClass("has-error");
-        }
-        $("#emailbox").addClass("glyphicon-ok");
-        $("#emaildiv").addClass("has-success");
-        $('#emailalert').removeClass("appear");
-        $('#emailalert').addClass("disappear");
-    }
-    if (data.errors.message) {
-        if ($("#textbox").hasClass("glyphicon-ok")) {
-            $("#textbox").removeClass("glyphicon-ok");
-            $("#textdiv").removeClass("has-success");
-        }
-        $("#textbox").addClass("glyphicon-remove");
-        $("#textdiv").addClass("has-error");
-        if($('#textalert').hasClass("hidden"))
-            $('#textalert').removeClass("hidden");
-        $('#textalert').removeClass("disappear");
-        $('#textalert').addClass("appear");
-        $('#textalert').text(data.errormessages.message);
-    } else {
-        if ($("#textbox").hasClass("glyphicon-remove")) {
-            $("#textbox").removeClass("glyphicon-remove");
-            $("#textdiv").removeClass("has-error");
-        }
-        $("#textbox").addClass("glyphicon-ok");
-        $("#textdiv").addClass("has-success");
-        $('#textalert').removeClass("appear");
-        $('#textalert').addClass("disappear");
-    }
     if (!$("#mobilbox").hasClass("glyphicon-ok")) {
         $("#mobilbox").addClass("glyphicon-ok");
         $("#mobildiv").addClass("has-success");
     }
+    if (!data.isformvalid) {
+        setinput(data.isvalid.name, 'name', data.faildata.name);
+        setinput(data.isvalid.email, 'email', data.faildata.email);
+        setinput(data.isvalid.message, 'text', data.faildata.message);
+
+    } else {
+        setinput(true, 'name', "");
+        setinput(true, 'email', "");
+        setinput(true, 'text', "");
+        if (!data.isvalid.sentmail) {
+            if ($('#textalert').hasClass("hidden"))
+                $('#textalert').removeClass("hidden");
+            $('#textalert').removeClass("disappear");
+            $('#textalert').addClass("appear");
+            $('#textalert').text(data.faildata.sentmail);
+        } else {
+            $('#textalert').removeClass("appear");
+            $('#textalert').addClass("disappear");
+            $('.contactform').addClass('slideout');
+            $('.thankyou').removeClass("hidden");
+            $('.thankyou').addClass('slidein');
+        }
+    }
+}
+
+function setinput(isvalid, input, faildata){
+    if(!isvalid){
+        if ($('#'+ input +'box').hasClass("glyphicon-ok")) {
+            $('#'+ input +'box').removeClass("glyphicon-ok");
+            $('#'+ input +'div').removeClass("has-success");
+        }
+        $('#'+ input +'box').addClass("glyphicon-remove");
+        $('#'+ input +'div').addClass("has-error");
+        if ($('.'+ input +'alert').hasClass("hidden"))
+            $('.'+ input +'alert').removeClass("hidden");
+        $('.'+ input +'alert').removeClass("disappear");
+        $('.'+ input +'alert').addClass("appear");
+        $('.'+ input +'alert').text(faildata);
+    }else{
+        if ($('#'+ input +'box').hasClass("glyphicon-remove")) {
+            $('#'+ input +'box').removeClass("glyphicon-remove");
+            $('#'+ input +'div').removeClass("has-error");
+        }
+        $('#'+ input +'box').addClass("glyphicon-ok");
+        $('#'+ input +'div').addClass("has-success");
+        $('.'+ input +'alert').removeClass("appear");
+        $('.'+ input +'alert').addClass("disappear");
+    }
+
 
 }
 
