@@ -29,8 +29,7 @@ body{
 }*/
 
 .main {
-    padding-top: 50px;
-    position: relative;
+    padding-top: 0px;
 }
 
 p{
@@ -49,16 +48,13 @@ h3{
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-#header {
-    position: relative;
-}
-
+/*
 #header .navbar-default{
     background-color: white;
     border-color:black;
 }
 #header .navbar-default .navbar-nav > li > a {
-    color:#000000;
+    color:#fff;
 }
 #header .navbar-default .navbar-nav > li > a:hover {
     color:#c0c0c0;
@@ -67,12 +63,12 @@ h3{
     margin-right: 0;
 }
 #header .navbar-default .navbar-brand{
-    color:#000000;
+    color:#fff;
     font-size:36px;
 }
 #header .navbar{
-    background-color: #fff;
-    opacity: 0.9;
+    background-color: transparent;
+    opacity: 1;
     border-radius: 0;
     border-top:0;
     border-left:0;
@@ -81,13 +77,13 @@ h3{
     font-size: 18px;
 
 }
+*/
 
 /* =====================================================================================================================
   FOOTER
 ===================================================================================================================== */
-#footer {
-    position: relative;
-}
+
+
 
 #footer .navbar-default{
     padding-top:10px;

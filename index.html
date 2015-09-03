@@ -5,17 +5,19 @@
     <link rel="stylesheet" href="./koll-art/css/main.css" >
     <link rel="stylesheet" href="./koll-art/css/index.css" >
     <link rel="stylesheet" href="./koll-art/css/animate.css">
-
+    <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yantramanav:300' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Koll-Art</title>
 </head>
 <body>
     <div id="header">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top menucolor"  role="navigation">
             <div class="navbar-header ">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -23,37 +25,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Koll-ART</a>
+                <a class="navbar-brand menutextcolor" href="index.html">Koll-ART</a>
             </div><!--navbar-header-->
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="web.html">Weblap & Webáruház</a></li>
-                    <li><a href="seomobil.html">SEO & Mobil</a></li>
-                    <li><a href="price.html">Árajánlat</a></li>
-                    <li><a href="reference.html">Refrencia</a></li>
-                    <li><a href="contact.html">Kapcsolat</a></li>
-                    <li><a href="#">Ügyfelek</a></li>
+                    <li ><a class="menutextcolor" href="web.html">Weblap készítés</a></li>
+                    <li><a class="menutextcolor" href="seomobil.html">Optimalizálás</a></li>
+                    <li><a class="menutextcolor" href="price.html">Árajánlat</a></li>
+                    <li><a class="menutextcolor" href="reference.html">Refrencia</a></li>
+                    <li><a class="menutextcolor" href="contact.html">Kapcsolat</a></li>
                 </ul>
             </div><!--collapse navbar-collapse-->
         </nav><!--navbar navbar-default navbar-fixed-top container-->
     </div> <!--header-->
     <div class="main">
-        <div id="start">
-            <div class="blackback">
-            </div>
-            <div class="herotext">
-                <p>Koll-Art</p>
-            </div>
-        </div>
         <div id="mainbanner">
             <div class="row" id="heroimage">
-                <img class="img-responsive" src="koll-art/img/index/o_kollart.jpg"/>
-            </div>
+                <div id="start" class="herotext">
+                    <p class="text-center">Mi ott leszünk amikor a hajnal hasad</p>
+                </div>
+                <img id="base" class="img-responsive" src="koll-art/img/index/o_kollart.jpg"/>
+            </div><!--heroimage-->
             <div class="row" id="description">
                 <div class="col-xs-12 col-sm-4 text-center">
-                    <br> <p>
-                        <img class="" src="koll-art/img/index/o_weblap.png"/>
-                    </p>
+                    <br>
+                    <p><img class="" src="koll-art/img/index/o_weblap.png"/></p>
                     <p>
                         Ötleteinek megfogalmazása után a formatervezéssel folytatjuk weboldalának megvalósítását.
                         Az általunk képviselt dizájn magában foglalja az esztétikát...
@@ -64,130 +60,156 @@
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-4 text-center table-bordered">
-                    <p>
-                        <br>
-                        <img class="" src="koll-art/img/index/o_ajanlat.png"/>
-                    </p>
+                    <br>
+                    <p><img class="" src="koll-art/img/index/o_ajanlat.png"/></p>
                     <p>
                         Ügyfeleink számára kedvező feltételek mellett biztosítunk lehetőséget domain név és
                         tárhely igényelésére. Kiemelt akcióink keretében akár ingyenes tárhelyeket is adunk...
 
                     </p>
-                    <a href="price.html">Tovább a csomagajánlatokhoz
+                    <a href="price.html">
+                        Tovább a csomagajánlatokhoz
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-4 text-center">
-                    <br> <p>
-                        <img class="" src="koll-art/img/index/o_optimalizalas.png"/>
-                    </p>
+                    <br>
+                    <p><img class="" src="koll-art/img/index/o_optimalizalas.png"/></p>
                     <p>
                         Napjaink legmodernebb elveit követve reszponzívvá alakítjuk weboldalát, hogy bármely kijelzőn
                         tökéletesen jelenjen meg és a keresőrobotok előrébb sorolják a találati listán...
                     </p>
-                    <a href="seomobil.html">Tovább az optimalizáláshoz
+                    <a href="seomobil.html">
+                        Tovább az optimalizáláshoz
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                     <br><br>
                 </div>
-            </div>
-        </div>
+            </div><!--decription-->
+        </div><!--mianbanner-->
 
         <div id="mainsite" class="">
             <div class="container">
                 <div class="row newsrow">
-                    <div class="col-sm-5 ">
+                    <div class=" ">
+
                         <div class="row">
-                            <div class="col-sm-12">
-                                <h2>A legjobb teljesítmény</h2>
-                                <p>
-                                    Hagyományos társaival ellentétben weboldala nem tartalmaz lassú elemeket,
-                                    hogy már a startnál biztos legyen győzelme.
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="col-xs-12 col-sm-12">
+                                    <h2>A legjobb teljesítmény</h2>
+                                    <p>
+                                        Hagyományos társaival ellentétben weboldala nem tartalmaz lassú elemeket,
+                                        hogy már a startnál biztos legyen győzelme.
+                                        <br>
+
+                                    </p>
+                                </div>
+
+                                <div class="col-xs-4 col-sm-12">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <small></small> <br><span>100<small>%</small> </span> <br><small> Tisztaság</small>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <small> </small> <br><span>0<small>% </small></span><br><small>  Fölösleg</small>
+                                    </div>
+                                    <div class="col-xs-12   col-sm-4">
+                                        <small> </small><br>  <span>2<small>-szeres</small> </span><br><small>  Gyorsaság</small>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 hidden-sm hidden-md hidden-lg">
+                                    <img class="img-responsive" src="koll-art/img/index/o_design.jpg"/>
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
                                     <br>
+                                    <h2>A legjobb dizájn</h2>
+                                    <p>
+                                        Amint megnyílik weboldala, a teljes egészében kifinomult dizájn mindent éles
+                                        megvilágításba helyez.
+                                    </p>
+                                </div>
 
-                                </p>
+                            </div><!--col-->
+                            <div class="col-sm-offset-1 col-sm-6 hidden-xs">
+                                <img class="img-responsive" src="koll-art/img/index/o_design.jpg"/>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <small></small> <br><span>100<small>%</small> </span> <br><small> Tisztaság</small>
-                            </div>
-                            <div class="col-sm-4">
-                                <small> </small> <br><span>0<small>% </small></span><br><small>  Fölösleg</small>
-                            </div>
-                            <div class="col-sm-4">
-                                <small> </small><br>  <span>2<small>-szeres</small> </span><br><small>  Gyorsaság</small>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <br>
-                                <h2>A legjobb dizájn</h2>
-                                <p>
-                                    Amint megnyílik weboldala, a teljes egészében kifinomult dizájn mindent éles
-                                    megvilágításba helyez.
-
-                                </p>
-                            </div>
-                        </div>
+                        </div><!--roww-->
                     </div>
-                    <div class="col-sm-7 center-block">
-                        <img class="img-responsive" src="koll-art/img/index/o_design.jpg"/>
-                    </div>
-                </div>
-            </div>
+                </div><!--row newsrow-->
+            </div><!--container-->
             <div class="row headrow">
                 <img class="img-responsive" src="koll-art/img/index/o_biztos.jpg"/>
-                <p>Merész döntések, kompromisszumok nélkül</p>
-            </div>
+                <p class="hidden-xs hidden-sm">Merész döntések, kompromisszumok nélkül</p>
+                <p class="hidden-md hidden-lg hidden-print">Merész döntések</p>
+            </div><!--headrow-->
             <div class="container">
                 <div class="row newsrow">
-                    <div class="col-xs-6 center-block">
-                        <img class="img-responsive" src="koll-art/img/index/o_mobil.jpg"/>
-                    </div>
-                    <div class="col-xs-6 ">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h2>Hiheteletlenül hatékony</h2>
+                    <div class="col-sm-12">
+
+                        <div class="col-xs-12 col-sm-6 col-sm-push-6">
+
+                                    <h2>Hiheteletlenül hatékony</h2>
+                                    <p>
+                                        Hiszen, magunk mögött hagytuk a régi, nagy helyigényű technológiákat, például a flash-t.<br>
+                                    </p>
+                        </div>
+                        <div class="col-sm-6 col-sm-pull-6">
+                            <img class="img-responsive" src="koll-art/img/index/o_mobil.jpg"/>
+                        </div>
+                        <div class="col-sm-6  col-sm-push-6">
+                            <br>
+                            <h2>A részletekre fordított figyelem eredményeképpen</h2>
+                            <p>
+                                Optimalizált weboldalakat készítünk, hogy minden tartalom tökéletes tisztasággal jelenjen meg bármely kijelzőn.
+                            </p>
+                        </div>
+                    </div><!--col-->
+                </div><!--row newsrow-->
+            </div><!--container-->
+            <div id="mainprice">
+                <div id="pricerow" class="row ">
+                    <div class="col-sm-offset-1 col-sm-10 text-center">
+                        <h1>Megérte legörgetni </h1>
+
+                        <a href="price.html">
+                            <div class="col-sm-3 pricetag">
+
+                                <h2>Weboldal készítés</h2>
                                 <p>
-                                    Hiszen, magunk mögött hagytuk a régi, nagy helyigényű technológiákat, például a flash-t.<br>
+                                    <small>Jelen az internet nagyvilágában</small> <span>45.000Ft</span>
                                 </p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <br>
-                                <h2>A részletekre fordított figyelem eredményeképpen</h2>
+                        </a>
+                        <a href="price.html">
+
+                            <div class="col-sm-offset-1 col-sm-4 pricetagcenter">
+                                <h2>Havidíjas ajánlatunk</h2>
+                                <h2>Weboldal készítés</h2>
                                 <p>
-                                    Optimalizált weboldalakat készítünk, hogy minden tartalom tökéletes tisztasággal jelenjen meg bármely kijelzőn.
+                                    <small>Azoknak akik komolyan gondolják</small> <span>45.000Ft</span>
                                 </p>
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="row endrow">
-                <div class="col-sm-offset-2 col-sm-8 text-center">
+                        </a>
+                        <a href="price.html">
+                            <div class="col-sm-offset-1 col-sm-3 pricetag">
+                                <h2>Optimalizálás</h2>
+                                <p>
+                                    <small>A teljesség igényével</small> <span>45.000Ft</span>
+                                </p>
 
-                    <div class="col-sm-offset-1 col-sm-2 table-bordered">
-                        <small> Optimalizálás </small> <br><span>49.900<small>Ft</small></span> <br><small> </small>
-                    </div>
-                    <div class="col-sm-offset-2 col-sm-2 table-bordered">
-                        <small> Weboldal </small> <br><span>90.000<small>Ft</small> </span><br><small>  </small>
-                    </div>
-                    <div class="col-sm-offset-2 col-sm-2 table-bordered">
-                        <small> Webáruház</small><br>  <span>130.000<small>Ft</small></span><br><small>   </small>
-                    </div>
+                            </div>
+                        </a>
 
-                </div>
 
+                    </div><!--col-->
+                </div><!--row newsrow-->
 
             </div>
-        </div>
-    </div>
-    <br><br>
+
+
+        </div><!--mainsite-->
+    </div><!--main-->
     <div id="footer">
         <div class="navbar navbar-default" >
             <div class="row hidden-xs">
@@ -228,5 +250,37 @@
             </div><!--row hidden-xs-->
         </div><!--navbar navbar-default row-->
     </div><!--footer-->
+<script>
+
+    $(document).ready(function(){
+        var seged =$("#base").height()-55;
+        $(window).scroll(function(){
+
+            if($(window).scrollTop() > 70){
+                $(".herotext").fadeOut();
+            } else if($(window).scrollTop() < 70){
+                $(".herotext").fadeIn(500);
+            }
+
+
+            if($(window).scrollTop() > seged){
+                $(".menutextcolor").addClass("menutextcolor2");
+                $(".menutextcolor2").removeClass("menutextcolor");
+                $(".menucolor").addClass("menucolor2");
+                $(".menucolor2").removeClass("menucolor");
+
+
+            }
+            else if ($(window).scrollTop() < seged ){
+                $(".menutextcolor2").addClass("menutextcolor");
+                $(".menutextcolor").removeClass("menutextcolor2");
+                $(".menucolor2").addClass("menucolor");
+                $(".menucolor").removeClass("menucolor2");
+
+
+            }
+
+        })});
+</script>
 </body>
 </html>

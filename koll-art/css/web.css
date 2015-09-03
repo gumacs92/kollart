@@ -1,0 +1,122 @@
+
+
+.main {
+    padding-top: 50px;
+}
+
+
+h1{
+    font-family: 'Yantramanav', sans-serif;
+    font-size:60px;
+}
+h2{
+    font-family: 'Yantramanav', sans-serif;
+    font-size:42px;
+}
+
+
+
+/* =====================================================================================================================
+  HEADER
+===================================================================================================================== */
+#header .navbar-default{
+    background-color: white;
+    border-color:black;
+}
+#header .navbar-default .navbar-nav > li > a {
+    color:#000;
+}
+#header .navbar-default .navbar-nav > li > a:hover {
+    color:#c0c0c0;
+}
+#header .navbar-right{
+    margin-right: 0;
+}
+#header .navbar-default .navbar-brand{
+    color:#000;
+    font-size:36px;
+}
+#header .navbar{
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+
+}
+/*RÉSZEKKK*/
+
+.mobil{
+    background-color: #eeeeee;
+   /* background: -webkit-linear-gradient(0deg, #eeeeee, #ffffff); /!* For Safari 5.1 to 6.0 *!/
+    background: -o-linear-gradient(0deg, #eeeeee, #ffffff); /!* For Opera 11.1 to 12.0 *!/
+    background: -moz-linear-gradient(0deg, #eeeeee, #ffffff); /!* For Firefox 3.6 to 15 *!/
+    background: linear-gradient(0deg, #eeeeee,#ffffff); /!* Standard syntax (must be last) *!/*/
+
+    padding-bottom:50px;
+
+}
+.negyedik{
+   background-color: #ffffff;
+   padding-top:50px;
+    padding-bottom:50px;
+
+}
+.negyedik .img-responsive{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.web{
+
+    padding-bottom:50px;
+
+}
+
+
+
+.mac {
+    height: 487.442px;
+    width: 913.953px;
+   /* margin: 855px auto 100px;*/
+    background: white url("../img/laptop_black_water.jpg") no-repeat 0 0;
+    -webkit-background-size:  913.953px 487.442px;
+    background-size:  913.953px 487.4426px;
+    backface-visibility: hidden;
+}
+
+.mac.intro {
+    position: fixed;
+    width: 2782px;
+    z-index:9999;
+    height: 1500px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    margin: 0;
+    top: 0;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -1391px;
+    -webkit-transform-origin: 50%;
+    -ms-transform-origin: 50%;
+    transform-origin: 50%;
+}
+.mac.intro h1 {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    z-index: 99999;
+    color: rgba(255, 255, 255,1);
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
