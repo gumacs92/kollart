@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="./koll-art/css/main.css">
     <link rel="stylesheet" href="./koll-art/css/animate.css">
     <link rel="stylesheet" href="./koll-art/css/contact.css">
-    <!--<link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Yantramanav:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
 
     <script language="javascript" type="text/javascript" src="./koll-art/js/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/js/main.js"></script>
@@ -16,7 +17,33 @@
     <title>Kapcsolat</title>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Koll-ART</a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="web.html">Weblap készítés</a></li>
+                <li><a href="seomobil.html">Optimalizálás</a></li>
+                <li><a href="price.html">Árajánlat</a></li>
+                <li><a href="reference.html">Refrencia</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+            </ul>
+        </div>
+        <!--collapse navbar-collapse-->
+    </nav>
+    <!--navbar navbar-default navbar-fixed-top container-->
+</div>
+<!--header-->
 <div class="container main">
 
 
@@ -51,8 +78,8 @@
                         <input type="email" class="form-control" name="email" id="email" placeholder="E-mail *">
                         <span id="emailbox" class="form-control-feedback glyphicon" aria-hidden="true"></span>
                     </div>
-                    <div class="emailalert hidden-xs hidden-sm col-md-offset-6 col-md-6">
-                        <div class="hidden alert alert-danger" role="alert"></div>
+                    <div class="hidden-xs hidden-sm col-md-offset-6 col-md-6">
+                        <div class="emailalert hidden alert alert-danger" role="alert"></div>
                     </div>
                 </div>
                 <div class="row hidden-md hidden-lg">
@@ -114,6 +141,56 @@
     <!--row-->
 </div>
 <!--main-->
-<div id="footer"></div>
+<div id="footer">
+    <div class="navbar navbar-default">
+        <div class="row hidden-xs">
+            <div class="col-sm-5">
+                <p class="text-left"> Koll-ART <br> Minden jog fenntartva <br> Copyright &copy; 2015</p>
+            </div>
+            <!--col-xs-5-->
+            <div class="col-sm-2">
+                <p class="text-center">
+                    <a href="#"> <i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#"> <i class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="#"> <i class="fa fa-pinterest fa-lg"></i></a>
+                    <a href="#"> <i class="fa fa-twitter fa-lg"></i></a>
+                </p>
+            </div>
+            <!--col-xs-2-->
+            <div class="col-sm-5">
+                <p class="text-right">
+                    +36 30 / 856 0598 <br> info@koll-art.hu <br> kollart.weblap@gmail.com
+                </p>
+            </div>
+            <!--col-xs-5-->
+        </div>
+        <!--row hidden-xs-->
+
+        <div class="row hidden-sm hidden-md hidden-lg hidden-print">
+            <div class="col-sx-12">
+                <p class="text-center">Minden jog fenntartva - Koll-ART - Copyright &copy; 2015</p>
+            </div>
+            <!--col-xs-12-->
+            <div class="col-sx-12">
+                <p class="text-center">
+                    <a href="#"> <i class="fa fa-facebook fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"> <i class="fa fa-google-plus fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"> <i class="fa fa-pinterest fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"> <i class="fa fa-twitter fa-lg"></i></a>
+                </p>
+            </div>
+            <!--col-xs-12-->
+            <div class="col-sx-12">
+                <p class="text-center">
+                    +36 30 / 856 0598 <br> info@koll-art.hu &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+                    kollart.weblap@gmail.com
+                </p>
+            </div>
+            <!--col-xs-12-->
+        </div>
+        <!--row hidden-xs-->
+    </div>
+    <!--navbar navbar-default row-->
+</div>
 </body>
 </html>

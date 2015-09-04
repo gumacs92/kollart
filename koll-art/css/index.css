@@ -5,121 +5,145 @@
 .main {
     position: relative;
     overflow-y: hidden;
+    padding-top: 0px;
 }
 
 /*HEADER*/
-
 
 /*FOOTER*/
 footer .navbar-default {
     margin-top: 0;
 }
 
-
 /* =====================================================================================================================
   KEYFRAMES
 ===================================================================================================================== */
-@keyframes fromEntranceToMainsite {
-    from {
-        font-size: 120px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        opacity: 1;
-    }
-    to {
-        font-size: 50px;
-        top: 20%;
-        left: 75%;
-        margin-right: -75%;
-        opacity: 1;
-    }
-}
-
-@keyframes entranceDisappear{
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
 /*azert 0.9 mert a menunel hasznalom*/
 @keyframes contentAppear {
-    from { opacity: 0; }
-    to { opacity: 0.9; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
 }
 
+@keyframes changeToWhite {
+    from {
+        background-color: transparent;
+        border-bottom: none;
+    }
+    to {
+        background-color: white;
+        border-bottom: solid #000000 1px;
+    }
+}
 
-
+@keyframes changeToBlack {
+    from {
+        background-color: white;
+        border-bottom: solid #000000 1px;
+    }
+    to {
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
 
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-#header .navbar-default{
+#header .navbar-default {
     background-color: white;
     border: none black;
 }
+
 /*#header .navbar-default .navbar-nav > li > a  {
     color:#ffffff;
 }
 #header .navbar-default .navbar-nav > li > a:hover {
     color:#c0c0c0;
 }*/
-#header .navbar-right{
+#header .navbar-right {
     margin-right: 0;
 }
+
 /*#header .navbar-default .navbar-brand{
     color:#fff;
     font-size:48px;
 }*/
-#header .navbar{
+#header .navbar {
     background-color: transparent;
-    opacity:0.9;
+    opacity: 0.9;
     border-radius: 0;
-    border-top:0;
-    border-left:0;
-    border-right:0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-family: 'Yantramanav', sans-serif;
     font-size: 24px;
-    color:#fff;
+    color: #fff;
 
 }
+
 /*innennnnn*/
-#header .navbar-default .navbar-nav > li > a.menutextcolor  {
-    color:#ffffff;
-}
-#header .navbar-default .navbar-nav > li > a:hover.menutextcolor {
-    color:#c0c0c0;
+#header .navbar-default .navbar-nav > li > a.menutextwhite {
+    color: #ffffff;
 }
 
-#header .navbar-default .navbar-nav > li > a.menutextcolor2  {
-    color:#000000;
+#header .navbar-default .navbar-nav > li > a:hover.menutextwhite {
+    color: #c0c0c0;
 }
-#header .navbar-default .navbar-nav > li > a:hover.menutextcolor2 {
-    color:#c0c0c0;
+
+#header .navbar-default .navbar-nav > li > a.menutextblack {
+    color: #000000;
 }
-#header .navbar-default .navbar-brand.menutextcolor{
-    color:#fff;
-    font-size:48px;
+
+#header .navbar-default .navbar-nav > li > a:hover.menutextblack {
+    color: #c0c0c0;
 }
-#header .navbar-default .navbar-brand.menutextcolor2{
-    color:#000;
-    font-size:48px;
+
+#header .navbar-default .navbar-brand.menutextwhite {
+    color: #fff;
+    font-size: 48px;
 }
-#header .navbar.menucolor{
+
+#header .navbar-default .navbar-brand.menutextblack {
+    color: #000;
+    font-size: 48px;
+}
+
+#header .navbar {
     background-color: transparent;
-    border: none;
+    border-bottom: none;
 }
-#header .navbar.menucolor2{
+
+#header .menuwhite {
     background-color: white;
-    opacity:0.9;
-    border-bottom:solid #000000 1px;
-    -webkit-animation: contentAppear  ease-in-out;
-    -moz-animation: contentAppear ease-in-out;
-    -o-animation: contentAppear ease-in-out;
-    animation: contentAppear ease-in-out;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+    border-bottom: solid #000000 1px;
+    opacity: 0.9;
+    animation-fill-mode: forwards;
+    -webkit-animation: changeToWhite ease-in-out;
+    -moz-animation: changeToWhite ease-in-out;
+    -o-animation: changeToWhite ease-in-out;
+    animation: changeToWhite ease-in-out;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
 }
+
+#header .menublack {
+    animation-fill-mode: forwards;
+    -webkit-animation: changeToBlack ease-in-out;
+    -moz-animation: changeToBlack ease-in-out;
+    -o-animation: changeToBlack ease-in-out;
+    animation: changeToBlack ease-in-out;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
 /* =====================================================================================================================
   CAROUSEL
 ======================================================================================================================*/
@@ -131,28 +155,27 @@ footer .navbar-default {
     width: 100%;
 }
 
-.herotext > p{
+.herotext > p {
     font-family: "Yantramanav", sans-serif;
     font-style: normal;
     font-size: 72px;
     color: white;
     z-index: 2;
-    padding-top:20%;
+    padding-top: 20%;
     text-shadow: 0 0 10px #000000, 2px 2px #000000;
-     opacity: 1;
-     -webkit-animation: contentAppear ;
-     -moz-animation: contentAppear ;
-     -o-animation: contentAppear ;
-     animation: contentAppear ;
-     -webkit-animation-duration: 2s;
-     -moz-animation-duration: 2s;
-     -o-animation-duration: 2s;
-     animation-duration: 2s;
+    opacity: 1;
+    -webkit-animation: contentAppear;
+    -moz-animation: contentAppear;
+    -o-animation: contentAppear;
+    animation: contentAppear;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
-
 /*#edf1ff;*/
-#mainbanner #description{
+#mainbanner #description {
     padding-left: 15px;
     padding-right: 15px;
     background-color: #eeeeee;
@@ -162,19 +185,21 @@ footer .navbar-default {
     background: linear-gradient(#eeeeee, #ffffff); /* Standard syntax */
     font-size: 18px;
 }
+
 #mainbanner #description a {
-    color:#7a89c2;
+    color: #7a89c2;
     text-decoration: none;
 }
+
 #mainbanner #description .table-bordered {
     border: 0 solid #fff;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
+
 #mainbanner #description p, #mainbanner #description a {
     font-size: 18px;
 }
-
 
 #mainsite, #mainbanner {
     position: relative;
@@ -194,28 +219,29 @@ footer .navbar-default {
     -moz-animation-duration: 2s;
     -o-animation-duration: 2s;
     animation-duration: 2s;
-   /* -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;*/
+    /* -webkit-animation-delay: 2s;
+     -moz-animation-delay: 2s;
+     -o-animation-delay: 2s;
+     animation-delay: 2s;*/
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
-#mainsite img, #mainbanner #heroimage img{
+
+#mainsite img, #mainbanner #heroimage img {
     width: 100%;
 }
 
-#mainsite .headrow, #mainsite .endrow{
+#mainsite .headrow, #mainsite .endrow {
     position: relative;
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-#mainsite .headrow > p{
+#mainsite .headrow > p {
     font-size: 50px;
-    color:#000000;
+    color: #000000;
     font-family: "Yantramanav", sans-serif;
     position: absolute;
     top: 50%;
@@ -230,9 +256,9 @@ footer .navbar-default {
 
 }
 
-#mainsite .endrow > p{
+#mainsite .endrow > p {
     font-size: 50px;
-    color:#000000;
+    color: #000000;
     font-family: "Yantramanav", sans-serif;
     position: absolute;
     top: 20%;
@@ -246,7 +272,8 @@ footer .navbar-default {
     z-index: 0;
 
 }
-#mainsite .endrow .table-bordered{
+
+#mainsite .endrow .table-bordered {
     border-color: #7A89C2;
     background-color: #edf1ff;
 }
@@ -273,27 +300,30 @@ footer .navbar-default {
 #mainsite .newsrow h2 {
     font-family: "Yantramanav", sans-serif;
     color: #7A89C2;
-    font-size:36px;
+    font-size: 36px;
 }
+
 /*9EA8AE*/
-.newsrow span, .endrow span{
+.newsrow span, .endrow span {
     font-family: "Yantramanav", sans-serif;
-    font-size:32px;
-    color:#7A89C2;
+    font-size: 32px;
+    color: #7A89C2;
     padding-top: 0;
 }
-.newsrow small, .endrow small{
 
-    font-size:18px;
+.newsrow small, .endrow small {
+
+    font-size: 18px;
 }
-.newsrow p{
+
+.newsrow p {
     font-family: "Oxygen", sans-serif;
-    font-size:24px;
+    font-size: 24px;
 
 }
 
 /*mainprice*/
-#mainprice #pricerow{
+#mainprice #pricerow {
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -304,83 +334,84 @@ footer .navbar-default {
     background: -moz-linear-gradient(#ffffff, #eeeeee); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ffffff, #eeeeee); /* Standard syntax */
 }
+
 #mainprice #pricerow a {
-    color:#72788D;
+    color: #72788D;
     text-decoration: none;
     font-size: 18px;
 }
+
 /*#bd9f86*/
-#mainprice #pricerow a:hover >.pricetag,
-#mainprice #pricerow a:hover >.pricetagcenter {
+#mainprice #pricerow a:hover > .pricetag,
+#mainprice #pricerow a:hover > .pricetagcenter {
     box-shadow: 0 0 20px #7A89C2;
 }
+
 #mainprice #pricerow h2 {
     font-size: 32px;
-    color:#7A89C2;
+    color: #7A89C2;
 }
 
 #mainprice #pricerow span {
     font-size: 40px;
-    color:#7A89C2;
+    color: #7A89C2;
 }
+
 #mainprice #pricerow small {
     font-size: 24px;
 
 }
-#mainprice .pricetag{
+
+#mainprice .pricetag {
     height: 200px;
 
-   -top:auto;
-    margin-bottom:auto;
+    -top: auto;
+    margin-bottom: auto;
     padding: 5px;
-    background-color:#ffffff;
-    color:#000000;
+    background-color: #ffffff;
+    color: #000000;
 
     border: 1px solid #7A89C2;
 
-
-
 }
-#mainprice .pricetagcenter{
 
-    margin-top:auto;
-    margin-bottom:auto;
+#mainprice .pricetagcenter {
+
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 10px;
-    background-color:#ffffff;
-    color:#000000;
+    background-color: #ffffff;
+    color: #000000;
 
     border: 1px solid #7A89C2;
 }
-
-
-
 
 /* =====================================================================================================================
     xs
 ===================================================================================================================== */
 @media (max-width: 767px) {
 
-
 }
+
 /* =====================================================================================================================
     sm
 ===================================================================================================================== */
-@media (min-width: 768px)and (max-width: 991px){
-
+@media (min-width: 768px)and (max-width: 991px) {
 
 }
+
 /* =====================================================================================================================
     md
 ===================================================================================================================== */
-@media (min-width: 992px)and (max-width: 1199px){
-
+@media (min-width: 992px)and (max-width: 1199px) {
 
 }
+
 /* =====================================================================================================================
     lg
 ===================================================================================================================== */
-@media (min-width: 1200px){
-    .tiszta{
+@media (min-width: 1200px) {
+    .tiszta {
         background-image: url("../img/tiszta_tukor.jpg");
     }
 

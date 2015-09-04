@@ -58,11 +58,11 @@ function addZoomIn(reftomb) {
  }*/
 
 //betöltő függvény minden page-re
-$(window).load(function () {
-    //beincludeolas
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-});
+//$(window).load(function () {
+//    //beincludeolas
+//    $("#header").load("header.html");
+//    $("#footer").load("footer.html");
+//});
 
 var reftomb;
 var loaded = false;
