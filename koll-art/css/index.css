@@ -199,6 +199,8 @@ footer .navbar-default {
 
 #mainbanner #description p, #mainbanner #description a {
     font-size: 18px;
+    font-family: "Yantramanav", sans-serif;
+
 }
 
 #mainsite, #mainbanner {
@@ -246,7 +248,7 @@ footer .navbar-default {
     position: absolute;
     top: 50%;
     left: 50%;
-
+    text-shadow: 0 0 10px #ffffff;
     margin-right: -50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -312,12 +314,12 @@ footer .navbar-default {
 }
 
 .newsrow small, .endrow small {
-
+    font-family: "Yantramanav", sans-serif;
     font-size: 18px;
 }
 
 .newsrow p {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Yantramanav", sans-serif;
     font-size: 24px;
 
 }
@@ -346,12 +348,18 @@ footer .navbar-default {
 #mainprice #pricerow a:hover > .pricetagcenter {
     box-shadow: 0 0 20px #7A89C2;
 }
-
-#mainprice #pricerow h2 {
-    font-size: 32px;
+#mainprice #pricerow h1 {
+    font-size: 48px;
     color: #7A89C2;
 }
 
+#mainprice #pricerow h2 {
+    font-size: 36px;
+    color: #7A89C2;
+}
+#mainprice #pricerow p {
+    font-size: 28px;
+}
 #mainprice #pricerow span {
     font-size: 40px;
     color: #7A89C2;
@@ -386,11 +394,52 @@ footer .navbar-default {
     border: 1px solid #7A89C2;
 }
 
+
+.partner-table {
+    display: table;
+    height: 100%;
+}
+.partner {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
 /* =====================================================================================================================
     xs
 ===================================================================================================================== */
 @media (max-width: 767px) {
+    .herotext > p {
+        font-family: "Yantramanav", sans-serif;
+        font-style: normal;
+        font-size: 48px;
+        color: white;
+        z-index: 2;
+        padding-top: 40%;
+        text-shadow: 0 0 10px #000000, 2px 2px #000000;
+        opacity: 1;
+        -webkit-animation: contentAppear;
+        -moz-animation: contentAppear;
+        -o-animation: contentAppear;
+        animation: contentAppear;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+    }
 
+    .warriorimage{
+        background-image: url("../img/index/mobil_kollart.jpg");
+        height: 700px;
+    }
+    #heroimage{
+        margin-left: -350px;
+        margin-right: -350px;
+    }
+   #mainbanner #heroimage img {
+        width: 100%;
+
+    }
 }
 
 /* =====================================================================================================================
@@ -413,6 +462,10 @@ footer .navbar-default {
 @media (min-width: 1200px) {
     .tiszta {
         background-image: url("../img/tiszta_tukor.jpg");
+    }
+    .warriorimage{
+        background-image: url("../img/index/o_kollart.jpg");
+        height: 700px;
     }
 
 }
