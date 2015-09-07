@@ -7,31 +7,16 @@ function adjust_textarea(h) {
     h.style.height = (h.scrollHeight) + "px";
 }
 
-function checkVisible(elm, eval) {
-    eval = eval || "visible";
-    var vpH = $(window).height(), // Viewport Height
-        st = $(window).scrollTop(), // Scroll Top
-        y = $(elm).offset().top,
-        elementHeight = $(elm).height();
-    //alert(y)
-    if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
-    if (eval == "above") return ((y < (vpH + st)));
-}
-
-function addZoomIn(reftomb) {
-    for (var i = 0; i < reftomb.length; i++) {
-        if (checkVisible(reftomb[i])) {
-            reftomb[i].css("webkitAnimationName", "zoomIn");
-            reftomb[i].css("webkitAnimationDuration", "1s");
-            reftomb[i].css("webkitanimationFillMode", "forwards");
-            //TODO többi böngészőre is....
-
-            reftomb[i].css("animationName", "zoomIn");
-            reftomb[i].css("animationDuration", "1s");
-            reftomb[i].css("animationFillMode", "forwards");
-        }
-    }
-}
+//function checkVisible(elm, eval) {
+//    eval = eval || "visible";
+//    var vpH = $(window).height(), // Viewport Height
+//        st = $(window).scrollTop(), // Scroll Top
+//        y = $(elm).offset().top,
+//        elementHeight = $(elm).height();
+//    //alert(y)
+//    if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
+//    if (eval == "above") return ((y < (vpH + st)));
+//}
 
 /*function calcPos(winHeight, scroll, adjuster, inertia) {
  return "50% " + (-((winHeight + scroll) - adjuster) * inertia) + "px";
@@ -64,16 +49,6 @@ function addZoomIn(reftomb) {
 //    $("#footer").load("footer.html");
 //});
 
-var reftomb;
-var loaded = false;
-
-function reference() {
-    if (!loaded) {
-        reftomb = [$('#ref1'), $('#ref2'), $('#ref3'), $('#ref4'), $('#ref5'), $('#ref6')];
-        loaded = true;
-    }
-    addZoomIn(reftomb);
-}
 
 //TODO átírni ezt az egész szennyett itt lentebb, mert ez használhatatlan
 //csak akkor kerdezz errol a formedvenyrol, ha eleg reszeg vagy

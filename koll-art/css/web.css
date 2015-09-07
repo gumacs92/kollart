@@ -19,23 +19,7 @@ h2{
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-/*#header .navbar-default{
-    background-color: white;
-    border-color:black;
-}
-#header .navbar-default .navbar-nav > li > a {
-    color:#000;
-}
-#header .navbar-default .navbar-nav > li > a:hover {
-    color:#c0c0c0;
-}
-#header .navbar-right{
-    margin-right: 0;
-}
-#header .navbar-default .navbar-brand{
-    color:#000;
-    font-size:36px;
-}
+
 #header .navbar{
     background-color: #fff;
     opacity: 0.9;
@@ -43,10 +27,9 @@ h2{
     border-top:0;
     border-left:0;
     border-right:0;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 18px;
-
-}*/
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 24px;
+}
 /*RÉSZEKKK*/
 
 .mobil{
