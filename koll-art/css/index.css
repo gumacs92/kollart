@@ -192,6 +192,13 @@ footer .navbar-default {
     text-decoration: none;
 }
 
+#mainbanner #description h3 {
+    color: #7a89c2;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Yantramanav", sans-serif;
+}
+
 #mainbanner #description .table-bordered {
     border: 0 solid #fff;
     border-left: 1px solid #fff;
@@ -201,6 +208,7 @@ footer .navbar-default {
 #mainbanner #description p, #mainbanner #description a {
     font-size: 18px;
     font-family: "Yantramanav", sans-serif;
+    color: #000000;
 
 }
 
@@ -337,7 +345,10 @@ footer .navbar-default {
     background: -moz-linear-gradient(#ffffff, #eeeeee); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ffffff, #eeeeee); /* Standard syntax */
 }
-
+#mainprice #pricerow  h2 {
+    font-size: 36px;
+    color: #7A89C2;
+}
 #mainprice #pricerow a {
     color: #72788D;
     text-decoration: none;
@@ -349,51 +360,74 @@ footer .navbar-default {
 #mainprice #pricerow a:hover > .pricetagcenter {
     box-shadow: 0 0 20px #7A89C2;
 }
-#mainprice #pricerow h1 {
+
+/*PRICETAG - a két széls?*/
+#mainprice .pricetag {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50px;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    border: 1px solid #72788D;
+
+}
+#mainprice #pricerow .pricetag h1 {
     font-size: 48px;
-    color: #7A89C2;
+    color: #72788D;
 }
 
-#mainprice #pricerow h2 {
+#mainprice #pricerow .pricetag h2 {
     font-size: 36px;
-    color: #7A89C2;
+    color: #72788D;
 }
-#mainprice #pricerow p {
+#mainprice #pricerow .pricetag p {
     font-size: 28px;
 }
-#mainprice #pricerow span {
+#mainprice #pricerow .pricetag span {
     font-size: 40px;
-    color: #7A89C2;
+    color: #72788D;
 }
 
-#mainprice #pricerow small {
+#mainprice #pricerow .pricetag small {
     font-size: 24px;
 
 }
 
-#mainprice .pricetag {
-    height: 200px;
-
-    -top: auto;
-    margin-bottom: auto;
-    padding: 5px;
-    background-color: #ffffff;
-    color: #000000;
-
-    border: 1px solid #7A89C2;
-
-}
-
+/*PRICETAGCENTER - a középs?*/
 #mainprice .pricetagcenter {
-
-    margin-top: auto;
-    margin-bottom: auto;
+    height: 300px;
+    margin-bottom: 50px;
     padding: 10px;
     background-color: #ffffff;
     color: #000000;
 
     border: 1px solid #7A89C2;
 }
+#mainprice #pricerow .pricetagcenter h1 {
+    font-size: 48px;
+    color: #7A89C2;
+}
+
+#mainprice #pricerow .pricetagcenter h2 {
+    font-size: 36px;
+    color: #7A89C2;
+}
+#mainprice #pricerow .pricetagcenter p {
+    font-size: 28px;
+}
+#mainprice #pricerow .pricetagcenter span {
+    font-size: 40px;
+    color: #7A89C2;
+}
+
+#mainprice #pricerow .pricetagcenter small {
+    font-size: 24px;
+
+}
+
+
 
 
 .partner-table {
