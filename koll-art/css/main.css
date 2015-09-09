@@ -2,8 +2,9 @@
   ALAP BEALLITASOK
 ===================================================================================================================== */
 body{
-    font-family: 'Oxygen', sans-serif;
+    /*font-family: 'Oxygen', sans-serif;*/
     /*font-family: "raleway",sans-serif;*/
+    font-family: 'Yantramanav', sans-serif;
     font-size: 18px;
     width: 100%;
 
@@ -29,7 +30,7 @@ body{
 }*/
 
 .main {
-    padding-top: 55px;
+    margin-top: 55px;
 }
 
 p{

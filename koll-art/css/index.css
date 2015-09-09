@@ -4,8 +4,7 @@
 
 .main {
     position: relative;
-    overflow-y: hidden;
-    padding-top: 0px;
+    margin-top: 0px;
 }
 
 /*HEADER*/
@@ -53,25 +52,6 @@ footer .navbar-default {
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-#header .navbar-default {
-    background-color: white;
-    border: none black;
-}
-
-/*#header .navbar-default .navbar-nav > li > a  {
-    color:#ffffff;
-}
-#header .navbar-default .navbar-nav > li > a:hover {
-    color:#c0c0c0;
-}*/
-#header .navbar-right {
-    margin-right: 0;
-}
-
-/*#header .navbar-default .navbar-brand{
-    color:#fff;
-    font-size:48px;
-}*/
 #header .navbar {
     background-color: transparent;
     opacity: 0.9;
@@ -86,7 +66,9 @@ footer .navbar-default {
 
 
 
-/*innennnnn*/
+/* =====================================================================================================================
+  HEADER AZ BANNER FÖLÖTT
+===================================================================================================================== */
 #header .navbar-default .navbar-nav > li > a.menutextwhite {
     color: #ffffff;
 }
@@ -146,7 +128,7 @@ footer .navbar-default {
 }
 
 /* =====================================================================================================================
-  CAROUSEL
+  MAINIMAGE ÉS A KÉPESMENÜK
 ======================================================================================================================*/
 
 #start {
@@ -218,26 +200,6 @@ footer .navbar-default {
     left: 0;
     width: 100%;
     overflow: hidden;
-
-    z-index: 0;
-    opacity: 0;
-
-    -webkit-animation: contentAppear ease-in-out;
-    -moz-animation: contentAppear ease-in-out;
-    -o-animation: contentAppear ease-in-out;
-    animation: contentAppear ease-in-out;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    /* -webkit-animation-delay: 2s;
-     -moz-animation-delay: 2s;
-     -o-animation-delay: 2s;
-     animation-delay: 2s;*/
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
 }
 
 #mainsite img, #mainbanner #heroimage img {
@@ -333,7 +295,9 @@ footer .navbar-default {
 
 }
 
-/*mainprice*/
+/* =====================================================================================================================
+  PRICE ROW
+===================================================================================================================== */
 #mainprice #pricerow {
     padding-top: 15px;
     padding-left: 15px;
