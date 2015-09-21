@@ -1,10 +1,44 @@
-#header .navbar{
+/* =====================================================================================================================
+  HEADER
+===================================================================================================================== */
+#header .navbar {
     background-color: #fff;
     opacity: 0.9;
     border-radius: 0;
-    border-top:0;
-    border-left:0;
-    border-right:0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     font-family: 'Yantramanav', sans-serif;
     font-size: 24px;
 }
+
+.contentline {
+    overflow-y: hidden;
+    position: relative;
+    margin-top: 50px;
+    height: 40vw;
+    width: 100%;
+}
+
+/* =====================================================================================================================
+  BESTPRICE
+===================================================================================================================== */
+#bestprice {
+    margin-top: 50px;
+}
+
+#bestoffer .centeroffer{
+    padding: 0;
+    height: 25vw;
+    width: 25vw;
+    border: 1px solid black;
+
+    position: absolute;
+    border-radius: 50% 0 50% 50%;
+    transform: translate(50%, 50%);
+}
+
+.main{
+    overflow-x: hidden;
+}
+

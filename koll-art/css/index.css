@@ -4,8 +4,7 @@
 
 .main {
     position: relative;
-    overflow-y: hidden;
-    padding-top: 0px;
+    margin-top: 0px;
 }
 
 /*HEADER*/
@@ -53,25 +52,6 @@ footer .navbar-default {
 /* =====================================================================================================================
   HEADER
 ===================================================================================================================== */
-#header .navbar-default {
-    background-color: white;
-    border: none black;
-}
-
-/*#header .navbar-default .navbar-nav > li > a  {
-    color:#ffffff;
-}
-#header .navbar-default .navbar-nav > li > a:hover {
-    color:#c0c0c0;
-}*/
-#header .navbar-right {
-    margin-right: 0;
-}
-
-/*#header .navbar-default .navbar-brand{
-    color:#fff;
-    font-size:48px;
-}*/
 #header .navbar {
     background-color: transparent;
     opacity: 0.9;
@@ -84,7 +64,11 @@ footer .navbar-default {
     color: #fff;
 }
 
-/*innennnnn*/
+
+
+/* =====================================================================================================================
+  HEADER AZ BANNER FÖLÖTT
+===================================================================================================================== */
 #header .navbar-default .navbar-nav > li > a.menutextwhite {
     color: #ffffff;
 }
@@ -144,7 +128,7 @@ footer .navbar-default {
 }
 
 /* =====================================================================================================================
-  CAROUSEL
+  MAINIMAGE ÉS A KÉPESMENÜK
 ======================================================================================================================*/
 
 #start {
@@ -178,10 +162,10 @@ footer .navbar-default {
     padding-left: 15px;
     padding-right: 15px;
     background-color: #eeeeee;
-    background: -webkit-linear-gradient(#c0c0c0, #ffffff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#c0c0c0, #ffffff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#c0c0c0, #ffffff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#c0c0c0, #ffffff); /* Standard syntax */
+    background: -webkit-linear-gradient(#eeeeee, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eeeeee, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eeeeee, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eeeeee, #ffffff); /* Standard syntax */
     font-size: 18px;
 }
 
@@ -216,26 +200,6 @@ footer .navbar-default {
     left: 0;
     width: 100%;
     overflow: hidden;
-
-    z-index: 0;
-    opacity: 0;
-
-    -webkit-animation: contentAppear ease-in-out;
-    -moz-animation: contentAppear ease-in-out;
-    -o-animation: contentAppear ease-in-out;
-    animation: contentAppear ease-in-out;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    /* -webkit-animation-delay: 2s;
-     -moz-animation-delay: 2s;
-     -o-animation-delay: 2s;
-     animation-delay: 2s;*/
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
 }
 
 #mainsite img, #mainbanner #heroimage img {
@@ -331,7 +295,9 @@ footer .navbar-default {
 
 }
 
-/*mainprice*/
+/* =====================================================================================================================
+  PRICE ROW
+===================================================================================================================== */
 #mainprice #pricerow {
     padding-top: 15px;
     padding-left: 15px;
@@ -343,12 +309,10 @@ footer .navbar-default {
     background: -moz-linear-gradient(#ffffff, #eeeeee); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ffffff, #eeeeee); /* Standard syntax */
 }
-
-#mainprice #pricerow h2 {
+#mainprice #pricerow  h2 {
     font-size: 36px;
     color: #7A89C2;
 }
-
 #mainprice #pricerow a {
     color: #72788D;
     text-decoration: none;
@@ -373,7 +337,6 @@ footer .navbar-default {
     border: 1px solid #72788D;
 
 }
-
 #mainprice #pricerow .pricetag h1 {
     font-size: 48px;
     color: #72788D;
@@ -383,11 +346,9 @@ footer .navbar-default {
     font-size: 36px;
     color: #72788D;
 }
-
 #mainprice #pricerow .pricetag p {
     font-size: 28px;
 }
-
 #mainprice #pricerow .pricetag span {
     font-size: 40px;
     color: #72788D;
@@ -408,7 +369,6 @@ footer .navbar-default {
 
     border: 1px solid #7A89C2;
 }
-
 #mainprice #pricerow .pricetagcenter h1 {
     font-size: 48px;
     color: #7A89C2;
@@ -418,11 +378,9 @@ footer .navbar-default {
     font-size: 36px;
     color: #7A89C2;
 }
-
 #mainprice #pricerow .pricetagcenter p {
     font-size: 28px;
 }
-
 #mainprice #pricerow .pricetagcenter span {
     font-size: 40px;
     color: #7A89C2;
@@ -433,11 +391,13 @@ footer .navbar-default {
 
 }
 
+
+
+
 .partner-table {
     display: table;
     height: 100%;
 }
-
 .partner {
     display: table-cell;
     vertical-align: middle;
@@ -467,25 +427,23 @@ footer .navbar-default {
         animation-duration: 2s;
     }
 
-    .warriorimage {
+    .warriorimage{
         background-image: url("../img/index/mobil_kollart.jpg");
         height: 700px;
     }
-
-    #heroimage {
+    #heroimage{
         margin-left: -350px;
         margin-right: -350px;
     }
-
-    #mainbanner #heroimage img {
+   #mainbanner #heroimage img {
         width: 100%;
 
     }
+   .col-xs-12.partner {
+       display: block;
 
-    .col-xs-12.partner {
-        display: block;
 
-    }
+   }
 
 }
 
@@ -510,8 +468,7 @@ footer .navbar-default {
     .tiszta {
         background-image: url("../img/tiszta_tukor.jpg");
     }
-
-    .warriorimage {
+    .warriorimage{
         background-image: url("../img/index/o_kollart.jpg");
         height: 700px;
     }
